@@ -26,13 +26,13 @@
   <title>Mindenit</title>
 </head>
 
-<body class="min-h-screen p-8">
+<body class="min-h-screen p-8 bg-[#090f1f] text-white">
   <div class="max-w-4xl mx-auto">
-    <div class="flex w-full gap-8 items-center mb-8" data-aos="fade-down">
+    <div class="flex w-full gap-8 items-center mb-8 flex-col md:flex-row" data-aos="fade-down">
       <img class="size-28 rounded-xl shadow-lg pointer-events-none" src="src/img/mindenit-logo.jpg" alt="Mindenit logo"
         data-aos="fade-right">
       <div class="flex-col flex gap-2" data-aos="fade-up">
-        <h1 class="text-4xl font-bold text-gray-100">Mindenit</h1>
+        <h1 class="text-4xl font-bold text-gray-100 text-center md:text-left">Mindenit</h1>
         <p class="text-gray-400">
           Ми — <span class="font-bold text-gray-100">Mindenit</span>, команда ентузіастів-студентів, яка займається
           створенням сучасних технологічних рішень для студентів.
@@ -41,22 +41,26 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-8 my-12" data-aos="fade-up">
-      <div class="text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-4" data-aos="fade-up">
+      <div class="counter text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
         <div class="text-3xl font-bold text-[#6368f2]">550+</div>
         <div class="text-gray-400 text-sm">Активних користувачів</div>
       </div>
-      <div class="text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
+      <div class="counter text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
         <div class="text-3xl font-bold text-[#6368f2]">3</div>
         <div class="text-gray-400 text-sm">Успішних проєкти</div>
       </div>
-      <div class="text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
+      <div class="counter text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
         <div class="text-3xl font-bold text-[#6368f2]">700+</div>
         <div class="text-gray-400 text-sm">Задоволених студентів</div>
       </div>
-      <div class="text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
+      <div class="counter text-center product-card flex-col shadow-lg !gap-1" data-aos="zoom-in">
         <div class="text-3xl font-bold text-[#6368f2]">100%</div>
         <div class="text-gray-400 text-sm">Підтримки</div>
+      </div>
+      <div class="counter text-center product-card flex-col shadow-lg !gap-1 sm:col-span-5" data-aos="zoom-in">
+        <div class="text-3xl font-bold text-[#6368f2]">2+</div>
+        <div class="text-gray-400 text-sm">Ми працюємо для Вас вже</div>
       </div>
     </div>
 
@@ -64,7 +68,7 @@
 
     <h1 class="text-3xl font-bold text-center mb-8 text-gray-100" data-aos="fade-up">Наші продукти</h1>
 
-    <div class="products-grid" data-aos="fade-up">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2" data-aos="fade-up">
       <a href="https://sh.mindenit.org/" target="_blank">
         <div class="product-card shadow-lg" data-aos="flip-left">
           <div class="border-gradient"></div>
@@ -124,10 +128,14 @@
 
     <div class="max-w-4xl mx-auto">
       <h1 class="text-3xl font-bold text-center mb-16 text-gray-100" data-aos="fade-up">Roadmap 2025</h1>
-
-      <div class="timeline-wrapper" data-aos="fade-up">
-        <div class="timeline-container">
-          <div class="wavy-line" data-aos="fade-up"></div>
+      <!-- Roadmap -->
+      <div class="relative timeline-wrapper" data-aos="fade-up">
+        <!-- Timeline container -->
+        <div class="relative pb-8 w-full max-w-[1140px] mx-auto">
+          <!-- Roadmap center line -->
+          <div class="absolute md:left-1/2 left-[90px] transform -translate-x-1/2 w-1.5 h-full bg-[#6368f2] -z-10"
+            data-aos="fade-up">
+          </div>
 
           <div class="space-y-12">
             <div class="timeline-item left" data-aos="fade-right">
