@@ -1,0 +1,12 @@
+.prettierrc
+.prettierignore
+pnpm-lock.yaml
+*.log
+*.md
+.env
+.nuxt
+.output
+node_modules
+dist
+.git
+LICENSE

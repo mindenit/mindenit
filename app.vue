@@ -1,6 +1,7 @@
+<script lang="ts" setup>
+const colorMode = useColorMode()
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout> <NuxtPage /> </NuxtLayout>
 </template>
