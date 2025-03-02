@@ -103,7 +103,7 @@ function animateCounter(element, targetValue, duration) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const counters = document.querySelectorAll('.product-card .text-3xl');
+  const counters = document.querySelectorAll('.product-card .counter');
   counters.forEach(counter => {
     const isTimeCounter = counter.textContent.includes('2+');
     if (isTimeCounter) {
