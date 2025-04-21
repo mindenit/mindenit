@@ -32,6 +32,7 @@ export default defineNuxtConfig({
 			brotli: true,
 		},
 	},
+	css: ["~/assets/css/index.css"],
 	vite: {
 		plugins: [tailwindcss()],
 	},
