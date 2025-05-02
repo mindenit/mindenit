@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 		"@nuxt/icon",
 		"@nuxtjs/color-mode",
 		"@vueuse/nuxt",
-		"@nuxtjs/seo",
+		// "@nuxtjs/seo",
 		"nuxt-directus",
 		"shadcn-nuxt",
 	],
