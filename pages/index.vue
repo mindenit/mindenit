@@ -1,3 +1,5 @@
 <template>
-	<div></div>
+	<div>
+		<Button>123</Button>
+	</div>
 </template>

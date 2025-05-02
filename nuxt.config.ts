@@ -11,6 +11,7 @@ export default defineNuxtConfig({
 		"@vueuse/nuxt",
 		"@nuxtjs/seo",
 		"nuxt-directus",
+		"shadcn-nuxt",
 	],
 	imports: {
 		dirs: ["./types"],
@@ -35,6 +36,9 @@ export default defineNuxtConfig({
 	css: ["~/assets/css/index.css"],
 	vite: {
 		plugins: [tailwindcss()],
+	},
+	shadcn: {
+		prefix: "",
 	},
 	icon: {
 		provider: "iconify",
