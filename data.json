@@ -1,0 +1,3327 @@
+{
+	"count": 13,
+	"next": null,
+	"previous": null,
+	"objects": [
+		{
+			"id": 60187,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "297c2d45-c280-4f7e-8fd8-180783d39c5d",
+								"display_name": "mindenit-server",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 75,
+										"start": "2025-04-13T21:00:00Z",
+										"end": "2025-04-16T15:43:13.156004Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-Light",
+										"price": 1.68,
+										"base_price": "1.68",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 67.0,
+											"unit_price": 0.025,
+											"time_unit": "h",
+											"timespan": "67 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "1.68"
+							},
+							{
+								"resource_id": "02a835be-16a3-4f8b-9b0e-7b792bbdd2d8",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 114,
+										"start": "2025-04-15T19:57:18Z",
+										"end": "2025-05-02T10:14:01Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-Light-AMD",
+										"price": 9.98,
+										"base_price": "9.97",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 399.0,
+											"unit_price": 0.025,
+											"time_unit": "h",
+											"timespan": "399 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 115,
+										"start": "2025-04-13",
+										"end": "2025-05-13",
+										"modifiers": [],
+										"attribute_value": 48,
+										"name": "Instance public traffic(R-Light-AMD)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 48,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-04-15T19:57:10.641251Z",
+										"end": "2025-05-02T10:14:01Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe56:35e2)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 399.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "399 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-04-15T19:57:10.641251Z",
+										"end": "2025-05-02T10:14:01Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 91.198.166.215)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 399.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "399 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "9.98"
+							}
+						],
+						"price": "11.66"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2025-05-02T10:14:01Z",
+				"metrics_details": [],
+				"price": "11.66",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "11.66",
+			"updated_at": "2025-05-02T13:14:01+03:00",
+			"billing_start": "2025-04-14T00:00:00+03:00",
+			"billing_end": "2025-05-13T23:59:59.999999+03:00",
+			"previous_history": 54759,
+			"next_history": null,
+			"start_date": "2025-04-14",
+			"end_date": "2025-05-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 11.66,
+			"standard_cycle_price": 11.66,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2025-04-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2025-05-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 54759,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "297c2d45-c280-4f7e-8fd8-180783d39c5d",
+								"display_name": "mindenit-server",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 75,
+										"start": "2025-03-13T22:00:00Z",
+										"end": "2025-04-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-Light",
+										"price": 16.8,
+										"base_price": "16.80",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.025,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 76,
+										"start": "2025-03-13",
+										"end": "2025-04-13",
+										"modifiers": [],
+										"attribute_value": 96,
+										"name": "Instance public traffic(R-Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 96,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-03-13T22:00:00Z",
+										"end": "2025-04-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:febe:2a12)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-03-13T22:00:00Z",
+										"end": "2025-04-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 91.198.166.118)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "16.80"
+							},
+							{
+								"resource_id": "2378750d-5b77-41d1-b781-c91e081fff04",
+								"display_name": "godlike-test",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 71,
+										"start": "2025-03-26T17:18:15Z",
+										"end": "2025-03-28T20:22:51.017597Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-Start",
+										"price": 0.37,
+										"base_price": "0.37",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 52.0,
+											"unit_price": 0.007143,
+											"time_unit": "h",
+											"timespan": "52 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 72,
+										"start": "2025-03-13",
+										"end": "2025-04-13",
+										"modifiers": [],
+										"attribute_value": 3,
+										"name": "Instance public traffic(R-Start)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 3,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-03-26T17:18:11.865304Z",
+										"end": "2025-03-28T20:22:50.561933Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.232)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 52.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "52 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-03-26T17:18:11.865304Z",
+										"end": "2025-03-28T20:22:50.561933Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fec1:9850)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 52.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "52 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.37"
+							}
+						],
+						"price": "17.17"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2025-04-13T20:59:59.999999Z",
+				"metrics_details": [],
+				"price": "17.17",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "17.17",
+			"updated_at": "2025-04-13T23:59:59.999999+03:00",
+			"billing_start": "2025-03-14T00:00:00+02:00",
+			"billing_end": "2025-04-13T23:59:59.999999+03:00",
+			"previous_history": 50219,
+			"next_history": null,
+			"start_date": "2025-03-14",
+			"end_date": "2025-04-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 17.17,
+			"standard_cycle_price": 17.17,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2025-03-14 00:00:00+02:00 Europe/Riga time",
+			"end_display": "2025-04-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 50219,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "297c2d45-c280-4f7e-8fd8-180783d39c5d",
+								"display_name": "mindenit-server",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 87,
+										"start": "2025-02-13T22:00:00Z",
+										"end": "2025-02-17T07:47:06Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-11",
+										"price": 1.34,
+										"base_price": "1.34",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 82.0,
+											"unit_price": 0.016369,
+											"time_unit": "h",
+											"timespan": "82 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 75,
+										"start": "2025-02-17T07:47:06Z",
+										"end": "2025-03-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-Light",
+										"price": 14.78,
+										"base_price": "14.78",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 591.0,
+											"unit_price": 0.025,
+											"time_unit": "h",
+											"timespan": "591 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 76,
+										"start": "2025-02-13",
+										"end": "2025-03-13",
+										"modifiers": [],
+										"attribute_value": 49,
+										"name": "Instance public traffic(R-Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 49,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-02-13T22:00:00Z",
+										"end": "2025-03-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:febe:2a12)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-02-13T22:00:00Z",
+										"end": "2025-03-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 91.198.166.118)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "16.12"
+							}
+						],
+						"price": "16.12"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2025-03-13T21:59:59.999999Z",
+				"metrics_details": [],
+				"price": "16.12",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "16.12",
+			"updated_at": "2025-03-13T23:59:59.999999+02:00",
+			"billing_start": "2025-02-14T00:00:00+02:00",
+			"billing_end": "2025-03-13T23:59:59.999999+02:00",
+			"previous_history": 46257,
+			"next_history": 54759,
+			"start_date": "2025-02-14",
+			"end_date": "2025-03-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 16.12,
+			"standard_cycle_price": 16.12,
+			"price_override": true,
+			"price_override_model": "none",
+			"start_display": "2025-02-14 00:00:00+02:00 Europe/Riga time",
+			"end_display": "2025-03-13 23:59:59.999999+02:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 46257,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "297c2d45-c280-4f7e-8fd8-180783d39c5d",
+								"display_name": "mindenit-server",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 87,
+										"start": "2025-01-13T22:00:00Z",
+										"end": "2025-02-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-11",
+										"price": 11.0,
+										"base_price": "11.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.016369,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 88,
+										"start": "2025-01-13",
+										"end": "2025-02-13",
+										"modifiers": [],
+										"attribute_value": 67,
+										"name": "Instance public traffic(R-11)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 67,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-13T22:00:00Z",
+										"end": "2025-02-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:febe:2a12)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-13T22:00:00Z",
+										"end": "2025-02-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 91.198.166.118)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 672.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "672.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "11.00"
+							}
+						],
+						"price": "11.00"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2025-02-13T21:59:59.999999Z",
+				"metrics_details": [],
+				"price": "11.00",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "11.00",
+			"updated_at": "2025-02-13T23:59:59.999999+02:00",
+			"billing_start": "2025-01-14T00:00:00+02:00",
+			"billing_end": "2025-02-13T23:59:59.999999+02:00",
+			"previous_history": 40524,
+			"next_history": 50219,
+			"start_date": "2025-01-14",
+			"end_date": "2025-02-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 0.0,
+			"standard_cycle_price": 11.0,
+			"price_override": true,
+			"price_override_model": "discount-value",
+			"start_display": "2025-01-14 00:00:00+02:00 Europe/Riga time",
+			"end_display": "2025-02-13 23:59:59.999999+02:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 40524,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "a2473f2f-66d0-45ff-a591-c518a75c8949",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-12-13T22:00:00Z",
+										"end": "2025-01-01T22:31:17.198311Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 8.76,
+										"base_price": "8.76",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 457.0,
+											"unit_price": 0.019167,
+											"time_unit": "h",
+											"timespan": "457 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-12-13",
+										"end": "2025-01-13",
+										"modifiers": [],
+										"attribute_value": 40,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 40,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-12-13T22:00:00Z",
+										"end": "2025-01-01T22:31:15.742004Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.95)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 457.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "457 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-12-13T22:00:00Z",
+										"end": "2025-01-01T22:31:15.742004Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe26:9d9c)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 457.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "457 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "8.76"
+							},
+							{
+								"resource_id": "d46141b8-399c-4d5f-b879-e61ffc32d091",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 87,
+										"start": "2025-01-01T22:35:32Z",
+										"end": "2025-01-01T22:42:18.703153Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-11",
+										"price": 0.02,
+										"base_price": "0.02",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.015277,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-01T22:35:28.691873Z",
+										"end": "2025-01-01T22:42:17.923789Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.95)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-01T22:35:28.691873Z",
+										"end": "2025-01-01T22:42:17.923789Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe1d:21d8)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.02"
+							},
+							{
+								"resource_id": "08c01ea6-62dd-4723-aa6f-fceb13acb465",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 87,
+										"start": "2025-01-01T22:43:39Z",
+										"end": "2025-01-01T22:46:01.172701Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-11",
+										"price": 0.02,
+										"base_price": "0.02",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.015277,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-01T22:43:34.103801Z",
+										"end": "2025-01-01T22:45:59.772396Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.95)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-01T22:43:34.103801Z",
+										"end": "2025-01-01T22:45:59.772396Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe37:4139)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.02"
+							},
+							{
+								"resource_id": "297c2d45-c280-4f7e-8fd8-180783d39c5d",
+								"display_name": "mindenit-server",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 87,
+										"start": "2025-01-01T22:45:50Z",
+										"end": "2025-01-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "R-11",
+										"price": 4.4,
+										"base_price": "4.40",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 288.0,
+											"unit_price": 0.015277,
+											"time_unit": "h",
+											"timespan": "288 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 88,
+										"start": "2024-12-13",
+										"end": "2025-01-13",
+										"modifiers": [],
+										"attribute_value": 27,
+										"name": "Instance public traffic(R-11)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 27,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-01T22:45:44.955857Z",
+										"end": "2025-01-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:febe:2a12)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 288.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "288 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2025-01-01T22:45:44.955857Z",
+										"end": "2025-01-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 91.198.166.118)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 288.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "288 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "4.40"
+							}
+						],
+						"price": "13.20"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2025-01-13T21:59:59.999999Z",
+				"metrics_details": [],
+				"price": "13.20",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "13.20",
+			"updated_at": "2025-01-13T23:59:59.999999+02:00",
+			"billing_start": "2024-12-14T00:00:00+02:00",
+			"billing_end": "2025-01-13T23:59:59.999999+02:00",
+			"previous_history": 34478,
+			"next_history": 46257,
+			"start_date": "2024-12-14",
+			"end_date": "2025-01-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 13.2,
+			"standard_cycle_price": 13.2,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-12-14 00:00:00+02:00 Europe/Riga time",
+			"end_display": "2025-01-13 23:59:59.999999+02:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 34478,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "a2473f2f-66d0-45ff-a591-c518a75c8949",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-11-13T22:00:00Z",
+										"end": "2024-12-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 13.8,
+										"base_price": "13.80",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.019167,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-11-13",
+										"end": "2024-12-13",
+										"modifiers": [],
+										"attribute_value": 60,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 60,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-11-13T22:00:00Z",
+										"end": "2024-12-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.95)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-11-13T22:00:00Z",
+										"end": "2024-12-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe26:9d9c)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "13.80"
+							}
+						],
+						"price": "13.80"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-12-13T21:59:59.999999Z",
+				"metrics_details": [],
+				"price": "13.80",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "13.80",
+			"updated_at": "2024-12-13T23:59:59.999999+02:00",
+			"billing_start": "2024-11-14T00:00:00+02:00",
+			"billing_end": "2024-12-13T23:59:59.999999+02:00",
+			"previous_history": 28733,
+			"next_history": 40524,
+			"start_date": "2024-11-14",
+			"end_date": "2024-12-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 13.8,
+			"standard_cycle_price": 13.8,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-11-14 00:00:00+02:00 Europe/Riga time",
+			"end_display": "2024-12-13 23:59:59.999999+02:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 28733,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "a2473f2f-66d0-45ff-a591-c518a75c8949",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-10-13T21:00:00Z",
+										"end": "2024-11-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 10.9,
+										"base_price": "10.90",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-10-13",
+										"end": "2024-11-13",
+										"modifiers": [],
+										"attribute_value": 57,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 57,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-10-13T21:00:00Z",
+										"end": "2024-11-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.95)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-10-13T21:00:00Z",
+										"end": "2024-11-13T21:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe26:9d9c)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "10.90"
+							}
+						],
+						"price": "10.90"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [
+							{
+								"resource_id": "e39ac2dd-bc85-4bd7-9edd-ee3a294893a7",
+								"display_name": "ORG Rebase",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 21,
+										"start": "2024-10-16T13:58:27.044888Z",
+										"end": "2024-11-11T09:40:37Z",
+										"modifiers": [],
+										"attribute_value": 28.0,
+										"name": "Backup/Snapshot/Image",
+										"price": 0.61,
+										"base_price": "0.61",
+										"price_details": {
+											"unit_display": "GBday",
+											"attribute_unit_display": "GB",
+											"units": 728.0,
+											"unit_price": 0.00084,
+											"time_unit": "d",
+											"timespan": "26 days",
+											"quantity": 28.0,
+											"display_quantity": true
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.61"
+							}
+						],
+						"price": "0.61"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-11-13T21:59:59.999999Z",
+				"metrics_details": [],
+				"price": "11.51",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "11.51",
+			"updated_at": "2024-11-13T23:59:59.999999+02:00",
+			"billing_start": "2024-10-14T00:00:00+03:00",
+			"billing_end": "2024-11-13T23:59:59.999999+02:00",
+			"previous_history": 23526,
+			"next_history": 34478,
+			"start_date": "2024-10-14",
+			"end_date": "2024-11-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 11.51,
+			"standard_cycle_price": 11.51,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-10-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2024-11-13 23:59:59.999999+02:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 23526,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "729caba3-6a77-49ff-a7c0-b1031069ed24",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-09-13T21:00:00Z",
+										"end": "2024-09-24T10:07:15.069992Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 3.85,
+										"base_price": "3.85",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 254.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "254 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-09-13",
+										"end": "2024-10-13",
+										"modifiers": [],
+										"attribute_value": 58,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 58,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-13T21:00:00Z",
+										"end": "2024-09-24T10:07:13.629405Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.237.165.22)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 254.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "254 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-13T21:00:00Z",
+										"end": "2024-09-24T10:07:13.629405Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fea0:9f55)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 254.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "254 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "3.85"
+							},
+							{
+								"resource_id": "cf6e6bbb-e73a-4506-941c-68010236918d",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-09-23T14:43:27Z",
+										"end": "2024-09-23T16:59:48.148593Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 0.05,
+										"base_price": "0.05",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 3.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "3 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-23T13:19:16.122002Z",
+										"end": "2024-09-23T16:59:46.781507Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.110)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 4.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "4 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-23T13:19:16.122002Z",
+										"end": "2024-09-23T16:59:46.781507Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe08:cee3)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 4.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "4 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.05"
+							},
+							{
+								"resource_id": "b6147f15-953d-45ac-beda-01d6d09ba354",
+								"display_name": "mindenitPL",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-09-23T14:43:25Z",
+										"end": "2024-09-29T17:02:30.854290Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 2.23,
+										"base_price": "2.23",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 147.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "147 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-09-13",
+										"end": "2024-10-13",
+										"modifiers": [],
+										"attribute_value": 8,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 8,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-23T13:42:27.988875Z",
+										"end": "2024-09-29T17:02:29.751277Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.90)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 148.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "148 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-23T13:42:27.988875Z",
+										"end": "2024-09-29T17:02:29.751277Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe90:1483)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 148.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "148 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "2.23"
+							},
+							{
+								"resource_id": "a2473f2f-66d0-45ff-a591-c518a75c8949",
+								"display_name": "mindenit",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-09-29T15:02:51Z",
+										"end": "2024-10-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 5.18,
+										"base_price": "5.18",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 342.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "342 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-09-13",
+										"end": "2024-10-13",
+										"modifiers": [],
+										"attribute_value": 30,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 30,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-29T15:02:41.014007Z",
+										"end": "2024-10-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.253.7.95)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 342.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "342 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-09-29T15:02:41.014007Z",
+										"end": "2024-10-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:8:0:f816:3eff:fe26:9d9c)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 342.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "342 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "5.18"
+							}
+						],
+						"price": "11.31"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [
+							{
+								"resource_id": "e6619532-eaf9-456e-9ede-b03155cdb753",
+								"display_name": "Base",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [],
+								"price": "0.00"
+							},
+							{
+								"resource_id": "86f5b466-cca4-4e8b-96e6-90b7ac65df58",
+								"display_name": "mindenit-backup",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 21,
+										"start": "2024-09-23T09:32:17.030872Z",
+										"end": "2024-09-23T11:05:10Z",
+										"modifiers": [],
+										"attribute_value": 39.0,
+										"name": "Backup/Snapshot/Image",
+										"price": 0.03,
+										"base_price": "0.03",
+										"price_details": {
+											"unit_display": "GBday",
+											"attribute_unit_display": "GB",
+											"units": 39.0,
+											"unit_price": 0.00066,
+											"time_unit": "d",
+											"timespan": "1 day",
+											"quantity": 39.0,
+											"display_quantity": true
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.03"
+							},
+							{
+								"resource_id": "04c2ba30-b6c1-405c-9ffb-606ed8ececc6",
+								"display_name": "mindenit-pl-image",
+								"region": "Poland",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 21,
+										"start": "2024-09-23T11:05:02.634927Z",
+										"end": "2024-09-24T13:43:48Z",
+										"modifiers": [],
+										"attribute_value": 39.0,
+										"name": "Backup/Snapshot/Image",
+										"price": 0.05,
+										"base_price": "0.05",
+										"price_details": {
+											"unit_display": "GBday",
+											"attribute_unit_display": "GB",
+											"units": 78.0,
+											"unit_price": 0.00066,
+											"time_unit": "d",
+											"timespan": "2 days",
+											"quantity": 39.0,
+											"display_quantity": true
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.05"
+							}
+						],
+						"price": "0.08"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-10-13T20:59:59.999999Z",
+				"metrics_details": [],
+				"price": "11.39",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "11.39",
+			"updated_at": "2024-10-13T23:59:59.999999+03:00",
+			"billing_start": "2024-09-14T00:00:00+03:00",
+			"billing_end": "2024-10-13T23:59:59.999999+03:00",
+			"previous_history": 18628,
+			"next_history": 28733,
+			"start_date": "2024-09-14",
+			"end_date": "2024-10-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 11.39,
+			"standard_cycle_price": 11.39,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-09-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2024-10-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 18628,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "729caba3-6a77-49ff-a7c0-b1031069ed24",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-08-13T21:00:00Z",
+										"end": "2024-09-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 10.9,
+										"base_price": "10.90",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-08-13",
+										"end": "2024-09-13",
+										"modifiers": [],
+										"attribute_value": 157,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 157,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-08-13T21:00:00Z",
+										"end": "2024-09-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.237.165.22)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-08-13T21:00:00Z",
+										"end": "2024-09-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fea0:9f55)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "10.90"
+							}
+						],
+						"price": "10.90"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-09-13T20:59:59.999999Z",
+				"metrics_details": [],
+				"price": "10.90",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "10.90",
+			"updated_at": "2024-09-13T23:59:59.999999+03:00",
+			"billing_start": "2024-08-14T00:00:00+03:00",
+			"billing_end": "2024-09-13T23:59:59.999999+03:00",
+			"previous_history": 14276,
+			"next_history": 23526,
+			"start_date": "2024-08-14",
+			"end_date": "2024-09-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 10.9,
+			"standard_cycle_price": 10.9,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-08-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2024-09-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 14276,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "8664b35f-c40f-446b-8724-5e8239b41873",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 6,
+										"start": "2024-07-13T21:00:00Z",
+										"end": "2024-07-28T14:09:47Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Basic",
+										"price": 2.9,
+										"base_price": "2.90",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 354.0,
+											"unit_price": 0.00819,
+											"time_unit": "h",
+											"timespan": "354 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 7,
+										"start": "2024-07-28T14:09:47Z",
+										"end": "2024-07-28T19:02:33.025156Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 0.08,
+										"base_price": "0.08",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 5.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "5 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-07-13",
+										"end": "2024-08-13",
+										"modifiers": [],
+										"attribute_value": 197,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 197,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-07-13T21:00:00Z",
+										"end": "2024-07-28T19:02:31.223849Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 194.26.232.73)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 359.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "359 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-07-13T21:00:00Z",
+										"end": "2024-07-28T19:02:31.223849Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fef4:4d70)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 359.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "359 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "2.98"
+							},
+							{
+								"resource_id": "9f30a13a-ad34-43a4-9ab3-a506d955aaa9",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-07-28T19:04:22Z",
+										"end": "2024-07-28T19:07:16.727357Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 0.02,
+										"base_price": "0.02",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-07-28T19:04:17.336785Z",
+										"end": "2024-07-28T19:07:16.244397Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fe83:fbf0)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-07-28T19:04:17.336785Z",
+										"end": "2024-07-28T19:07:16.244397Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 45.132.107.57)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 1.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "1 hour",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "0.02"
+							},
+							{
+								"resource_id": "729caba3-6a77-49ff-a7c0-b1031069ed24",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 7,
+										"start": "2024-07-28T19:10:45Z",
+										"end": "2024-08-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Light",
+										"price": 5.84,
+										"base_price": "5.84",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 386.0,
+											"unit_price": 0.015138,
+											"time_unit": "h",
+											"timespan": "386 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 29,
+										"start": "2024-07-13",
+										"end": "2024-08-13",
+										"modifiers": [],
+										"attribute_value": 78,
+										"name": "Instance public traffic(VPS Light)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 78,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-07-28T19:10:34.797154Z",
+										"end": "2024-08-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 185.237.165.22)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 386.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "386 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-07-28T19:10:34.797154Z",
+										"end": "2024-08-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fea0:9f55)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 386.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "386 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "5.84"
+							}
+						],
+						"price": "8.84"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-08-13T20:59:59.999999Z",
+				"metrics_details": [],
+				"price": "8.84",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "8.84",
+			"updated_at": "2024-08-13T23:59:59.999999+03:00",
+			"billing_start": "2024-07-14T00:00:00+03:00",
+			"billing_end": "2024-08-13T23:59:59.999999+03:00",
+			"previous_history": 10416,
+			"next_history": 18628,
+			"start_date": "2024-07-14",
+			"end_date": "2024-08-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 8.84,
+			"standard_cycle_price": 8.84,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-07-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2024-08-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 10416,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "8664b35f-c40f-446b-8724-5e8239b41873",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 6,
+										"start": "2024-06-13T21:00:00Z",
+										"end": "2024-07-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Basic",
+										"price": 5.9,
+										"base_price": "5.90",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.00819,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 28,
+										"start": "2024-06-13",
+										"end": "2024-07-13",
+										"modifiers": [],
+										"attribute_value": 154,
+										"name": "Instance public traffic(VPS Basic)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 154,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-06-13T21:00:00Z",
+										"end": "2024-07-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 194.26.232.73)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-06-13T21:00:00Z",
+										"end": "2024-07-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fef4:4d70)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "5.90"
+							}
+						],
+						"price": "5.90"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-07-13T20:59:59.999999Z",
+				"metrics_details": [],
+				"price": "5.90",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "5.90",
+			"updated_at": "2024-07-13T23:59:59.999999+03:00",
+			"billing_start": "2024-06-14T00:00:00+03:00",
+			"billing_end": "2024-07-13T23:59:59.999999+03:00",
+			"previous_history": 7030,
+			"next_history": 14276,
+			"start_date": "2024-06-14",
+			"end_date": "2024-07-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 5.9,
+			"standard_cycle_price": 5.9,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-06-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2024-07-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 7030,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "8664b35f-c40f-446b-8724-5e8239b41873",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 6,
+										"start": "2024-05-13T21:00:00Z",
+										"end": "2024-06-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Basic",
+										"price": 5.9,
+										"base_price": "5.90",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.00819,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 28,
+										"start": "2024-05-13",
+										"end": "2024-06-13",
+										"modifiers": [],
+										"attribute_value": 96,
+										"name": "Instance public traffic(VPS Basic)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 96,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-05-13T21:00:00Z",
+										"end": "2024-06-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 194.26.232.73)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-05-13T21:00:00Z",
+										"end": "2024-06-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fef4:4d70)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 720.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "720.000000000 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "5.90"
+							}
+						],
+						"price": "5.90"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-06-13T20:59:59.999999Z",
+				"metrics_details": [],
+				"price": "5.90",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "5.90",
+			"updated_at": "2024-06-13T23:59:59.999999+03:00",
+			"billing_start": "2024-05-14T00:00:00+03:00",
+			"billing_end": "2024-06-13T23:59:59.999999+03:00",
+			"previous_history": 4407,
+			"next_history": 10416,
+			"start_date": "2024-05-14",
+			"end_date": "2024-06-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 5.9,
+			"standard_cycle_price": 5.9,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-05-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2024-06-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		},
+		{
+			"id": 4407,
+			"usage": {
+				"project": "49a50d16d81d47a48cf08e6a805f4377",
+				"usage_details": [
+					{
+						"resource_name": "Instance",
+						"resource_type": "instance",
+						"usage": [
+							{
+								"resource_id": "8664b35f-c40f-446b-8724-5e8239b41873",
+								"display_name": "mindenit",
+								"region": "Netherlands-2",
+								"related_resource": null,
+								"history": [
+									{
+										"rule": 6,
+										"start": "2024-04-14T08:44:33Z",
+										"end": "2024-05-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "VPS Basic",
+										"price": 5.81,
+										"base_price": "5.81",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 709.0,
+											"unit_price": 0.00819,
+											"time_unit": "h",
+											"timespan": "709 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 28,
+										"start": "2024-04-13",
+										"end": "2024-05-13",
+										"modifiers": [],
+										"attribute_value": 41,
+										"name": "Instance public traffic(VPS Basic)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "GB",
+											"units": 41,
+											"unit_price": 0.0,
+											"time_unit": "bc"
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-04-14T08:44:27.581250Z",
+										"end": "2024-05-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 194.26.232.73)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 709.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "709 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									},
+									{
+										"rule": 17,
+										"start": "2024-04-14T08:44:27.581250Z",
+										"end": "2024-05-13T20:59:59.999999Z",
+										"modifiers": [],
+										"attribute_value": 1,
+										"name": "IP address (IP: 2a13:4ac0:10:0:f816:3eff:fef4:4d70)",
+										"price": 0.0,
+										"base_price": "0.00",
+										"price_details": {
+											"unit_display": "H",
+											"attribute_unit_display": null,
+											"units": 709.0,
+											"unit_price": 0.0,
+											"time_unit": "h",
+											"timespan": "709 hours",
+											"quantity": 1,
+											"display_quantity": false
+										},
+										"modifiers_summary": []
+									}
+								],
+								"price": "5.81"
+							}
+						],
+						"price": "5.81"
+					},
+					{
+						"resource_name": "Image",
+						"resource_type": "image",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume",
+						"resource_type": "volume",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume snapshot",
+						"resource_type": "volume_snapshot",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Volume backup",
+						"resource_type": "volume_backup",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Floating IPs",
+						"resource_type": "floating_ip",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "DNS Domains",
+						"resource_type": "dns_domain",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Load balancer",
+						"resource_type": "load_balancer",
+						"usage": [],
+						"price": "0.00"
+					},
+					{
+						"resource_name": "Database instance",
+						"resource_type": "dbaas_instance",
+						"usage": [],
+						"price": "0.00"
+					}
+				],
+				"usage_end": "2024-05-13T20:59:59.999999Z",
+				"metrics_details": [],
+				"price": "5.81",
+				"currency": {
+					"code": "EUR",
+					"rate": 1.0
+				},
+				"metrics_details_summary": [],
+				"metrics_total_price": "0.00"
+			},
+			"service_display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"price": "5.81",
+			"updated_at": "2024-05-13T23:59:59.999999+03:00",
+			"billing_start": "2024-04-14T00:00:00+03:00",
+			"billing_end": "2024-05-13T23:59:59.999999+03:00",
+			"previous_history": null,
+			"next_history": 7030,
+			"start_date": "2024-04-14",
+			"end_date": "2024-05-13",
+			"client_currency": {
+				"code": "EUR",
+				"rate": "1.000000",
+				"is_used": true,
+				"is_default": true
+			},
+			"total_cycle_price": 5.81,
+			"standard_cycle_price": 5.81,
+			"price_override": false,
+			"price_override_model": "none",
+			"start_display": "2024-04-14 00:00:00+03:00 Europe/Riga time",
+			"end_display": "2024-05-13 23:59:59.999999+03:00 Europe/Riga time",
+			"standard_price_taxes": [],
+			"price_taxes": []
+		}
+	],
+	"totalCount": 13,
+	"pageNo": 1,
+	"estimated_cycle_cost": {
+		"amount": 18.49,
+		"usage_id": 60187
+	},
+	"credit_and_invoicing_info": {
+		"has_billing_agreement": false,
+		"remaining_days": 7.0,
+		"remaining_hours": 185.0,
+		"reached_credit_limit": false,
+		"expiry_credit_info": []
+	},
+	"latest_data_from": "2025-05-02T10:00:01.122998Z",
+	"available_services": [
+		{
+			"display": "Fotbo service - 49a50d16d81d47a48cf08e6a805f4377",
+			"related_dynamic_usage_id": 60187,
+			"price_override": false,
+			"price_override_display": null,
+			"price_override_model": "discount-value"
+		}
+	]
+}
