@@ -10,6 +10,8 @@ export default withNuxt([
 		},
 		rules: {
 			'prettier/prettier': 'error',
+			'vue/multi-word-component-names': 'off',
+			'vue/require-default-prop': 'off',
 		},
 	},
 	{
