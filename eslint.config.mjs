@@ -4,7 +4,7 @@ import prettierConfig from 'eslint-config-prettier'
 
 export default withNuxt([
 	{
-		// Конфігурація для інтеграції Prettier
+		files: ['**/*.js', '**/*.ts', '**/*.vue'],
 		plugins: {
 			prettier: prettierPlugin,
 		},
