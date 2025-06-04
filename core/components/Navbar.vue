@@ -65,24 +65,58 @@ onClickOutside(navbarRef, () => {
 								</NavigationMenuLink>
 							</NuxtLink>
 						</NavigationMenuItem>
+
 						<NavigationMenuItem>
 							<NavigationMenuTrigger>Документи</NavigationMenuTrigger>
 							<NavigationMenuContent>
-								<NuxtLink v-slot="{ isActive, href, navigate }" to="/memorandum" custom>
-									<NavigationMenuLink
-										:active="isActive"
-										:href
-										:class="navigationMenuTriggerStyle()"
-										@click="navigate"
-									>
-										Меморандум
-									</NavigationMenuLink>
-								</NuxtLink>
+								<div class="grid w-48 gap-1 p-2">
+									<NuxtLink v-slot="{ isActive, href, navigate }" to="/memorandum" custom>
+										<NavigationMenuLink
+											:active="isActive"
+											:href
+											:class="navigationMenuTriggerStyle()"
+											@click="navigate"
+										>
+											Меморандум
+										</NavigationMenuLink>
+									</NuxtLink>
+								</div>
+							</NavigationMenuContent>
+						</NavigationMenuItem>
+
+						<NavigationMenuItem>
+							<NavigationMenuTrigger>Програми</NavigationMenuTrigger>
+							<NavigationMenuContent>
+								<div class="grid w-48 gap-1 p-2">
+									<NuxtLink v-slot="{ isActive, href, navigate }" to="/student-program" custom>
+										<NavigationMenuLink
+											:active="isActive"
+											:href
+											:class="navigationMenuTriggerStyle()"
+											@click="navigate"
+										>
+											Student Program
+										</NavigationMenuLink>
+									</NuxtLink>
+
+									<NuxtLink v-slot="{ isActive, href, navigate }" to="/developer-program" custom>
+										<NavigationMenuLink
+											:active="isActive"
+											:href
+											:class="navigationMenuTriggerStyle()"
+											@click="navigate"
+										>
+											Developer Program
+										</NavigationMenuLink>
+									</NuxtLink>
+								</div>
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
+
 				<div class="bg-border h-6 w-px"></div>
+
 				<a
 					href="https://t.me/mindenit"
 					target="_blank"
@@ -97,6 +131,22 @@ onClickOutside(navbarRef, () => {
 							transition-opacity duration-300 group-hover:opacity-100"
 					></div>
 				</a>
+
+				<a
+					href="https://discord.gg/ahKR75hU9h"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-muted-foreground group relative rounded-xl p-2 font-medium transition-all duration-300
+						hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-950/50 dark:hover:text-indigo-400"
+					title="Наш Discord"
+				>
+					<Icon name="lucide:gamepad-2" class="size-4" />
+					<div
+						class="absolute inset-0 rounded-xl bg-gradient-to-r from-indigo-500/10 to-indigo-600/10 opacity-0
+							transition-opacity duration-300 group-hover:opacity-100"
+					></div>
+				</a>
+
 				<a
 					href="https://github.com/mindenit"
 					target="_blank"
@@ -114,14 +164,10 @@ onClickOutside(navbarRef, () => {
 			</nav>
 
 			<div class="flex items-center gap-2 md:hidden">
-				<button
-					class="text-muted-foreground hover:text-secondary-foreground hover:bg-muted rounded-xl p-2 transition-all
-						duration-300"
-					@click="showMobileMenu = !showMobileMenu"
-				>
+				<Button variant="ghost" size="icon" @click="showMobileMenu = !showMobileMenu">
 					<Icon v-if="!showMobileMenu" name="lucide:menu" class="!size-5" />
 					<Icon v-else name="lucide:x" class="!size-5" />
-				</button>
+				</Button>
 				<ThemeSwitcher />
 			</div>
 
@@ -153,30 +199,68 @@ onClickOutside(navbarRef, () => {
 					</NuxtLink>
 				</div>
 
+				<div class="space-y-1">
+					<div class="text-muted-foreground/70 px-4 py-1 text-sm font-medium">Програми</div>
+					<NuxtLink
+						to="/student-program"
+						class="text-muted-foreground hover:text-secondary-foreground hover:bg-muted block rounded-xl px-6 py-2
+							text-sm transition-colors duration-300"
+						@click="showMobileMenu = false"
+					>
+						Student Program
+					</NuxtLink>
+					<NuxtLink
+						to="/developer-program"
+						class="text-muted-foreground hover:text-secondary-foreground hover:bg-muted block rounded-xl px-6 py-2
+							text-sm transition-colors duration-300"
+						@click="showMobileMenu = false"
+					>
+						Developer Program
+					</NuxtLink>
+				</div>
+
 				<div class="border-border/30 mt-3 border-t pt-2">
-					<a
-						href="https://t.me/mindenit"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="text-muted-foreground hover:text-christi-600 dark:hover:text-christi-400 hover:bg-christi-50
-							dark:hover:bg-christi-950/50 flex items-center gap-3 rounded-xl px-4 py-2 transition-colors
-							duration-300"
-						@click="showMobileMenu = false"
-					>
-						<Icon name="lucide:send" class="size-4" />
-						Telegram
-					</a>
-					<a
-						href="https://github.com/mindenit"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="text-muted-foreground hover:text-secondary-foreground hover:bg-muted flex items-center gap-3
-							rounded-xl px-4 py-2 transition-colors duration-300"
-						@click="showMobileMenu = false"
-					>
-						<Icon name="lucide:github" class="size-4" />
-						GitHub
-					</a>
+					<div class="space-y-1">
+						<div class="text-muted-foreground/70 px-4 py-1 text-sm font-medium">Спільнота</div>
+
+						<a
+							href="https://t.me/mindenit"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-muted-foreground hover:text-christi-600 dark:hover:text-christi-400 hover:bg-christi-50
+								dark:hover:bg-christi-950/50 flex items-center gap-3 rounded-xl px-6 py-2 text-sm transition-colors
+								duration-300"
+							@click="showMobileMenu = false"
+						>
+							<Icon name="lucide:send" class="size-4" />
+							Telegram
+						</a>
+
+						<a
+							href="https://discord.gg/ahKR75hU9h"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-muted-foreground flex items-center gap-3 rounded-xl px-6 py-2 text-sm transition-colors
+								duration-300 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-950/50
+								dark:hover:text-indigo-400"
+							@click="showMobileMenu = false"
+						>
+							<Icon name="lucide:gamepad-2" class="size-4" />
+							Discord
+						</a>
+
+						<a
+							href="https://github.com/mindenit"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-muted-foreground hover:text-secondary-foreground hover:bg-muted flex items-center gap-3
+								rounded-xl px-6 py-2 text-sm transition-colors duration-300"
+							@click="showMobileMenu = false"
+						>
+							<Icon name="lucide:github" class="size-4" />
+							GitHub
+						</a>
+					</div>
 				</div>
 			</nav>
 		</div>
