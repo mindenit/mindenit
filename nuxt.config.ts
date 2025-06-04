@@ -27,6 +27,7 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 		'@nuxtjs/color-mode',
 		'shadcn-nuxt',
+		'@vueuse/nuxt',
 	],
 	icon: {
 		provider: 'iconify',

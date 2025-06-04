@@ -21,6 +21,10 @@
 	--color-accent-foreground: var(--accent-foreground);
 	--color-destructive: var(--destructive);
 	--color-destructive-foreground: var(--destructive-foreground);
+	--color-success: var(--success);
+	--color-success-foreground: var(--success-foreground);
+	--color-warning: var(--warning);
+	--color-warning-foreground: var(--warning-foreground);
 	--color-border: var(--border);
 	--color-input: var(--input);
 	--color-ring: var(--ring);
@@ -163,9 +167,6 @@
 	--color-color-royal-blue-200: var(--color-royal-blue-200);
 	--color-color-royal-blue-100: var(--color-royal-blue-100);
 	--color-color-royal-blue-50: var(--color-royal-blue-50);
-
-	--color-anim-primary: var(--color-royal-blue-500);
-	--color-anim-secondary: var(--color-royal-blue-800);
 }
 
 :root {

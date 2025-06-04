@@ -26,15 +26,8 @@ useHead({
 })
 
 definePageMeta({
-	layout: 'default',
+	layout: 'home',
 })
-
-const stats = [
-	{ id: 1, value: '550+', label: 'Активних користувачів', isTime: false },
-	{ id: 2, value: '3', label: 'Успішних проєкти', isTime: false },
-	{ id: 3, value: '700+', label: 'Задоволених студентів', isTime: false },
-	{ id: 4, value: '100%', label: 'Підтримки', isTime: false },
-]
 
 const products = [
 	{
@@ -42,7 +35,6 @@ const products = [
 		description: 'Сайт з розкладом для студентів університету',
 		logo: '/schedule-logo.png',
 		link: 'https://sh.mindenit.org/',
-		aos: 'flip-left',
 	},
 	{
 		name: 'Answers',
@@ -50,7 +42,6 @@ const products = [
 			'Сайт з відповідями на тести для студентів, яка керується студентами. Аналог "Золотого Трону Імператора (emperor.uno)"',
 		logo: '/answers-logo.png',
 		link: 'https://answers.mindenit.org/',
-		aos: 'flip-right',
 	},
 	{
 		name: 'Glimpse',
@@ -58,76 +49,62 @@ const products = [
 			'Біржа робіт, на якій студенти швидко та прозоро можуть покупати та продавати роботи',
 		logo: null,
 		link: null,
-		aos: 'flip-right',
-		fullWidth: true,
 	},
 ]
 </script>
 
 <template>
-	<div class="flex flex-col gap-8">
-		<div class="flex w-full flex-col items-center gap-8 md:flex-row">
-			<img
-				class="pointer-events-none size-28 rounded-xl shadow-lg"
-				src="/logo.webp"
-				alt="Mindenit logo"
-			/>
-			<div class="flex flex-col gap-2">
-				<h1 class="text-secondary-foreground text-center text-4xl font-bold md:text-left">
-					Mindenit
-				</h1>
-				<p class="text-muted-foreground">
-					Ми — <span class="text-secondary-foreground font-bold">Mindenit</span>, команда
-					ентузіастів-студентів, яка займається створенням сучасних технологічних рішень для
-					студентів. Наша мета — покращити та полегшити студентське життя завдяки сайтам, ботам та
-					додаткам.
+	<div class="flex flex-col gap-16">
+		<section>
+			<div class="mb-6 text-center">
+				<h2 class="mb-4 text-4xl font-black md:text-5xl">
+					<span
+						class="from-royal-blue-600 to-christi-600 dark:from-royal-blue-400 dark:to-christi-400 bg-gradient-to-r
+							bg-clip-text text-transparent"
+					>
+						Наші продукти
+					</span>
+				</h2>
+				<p class="text-muted-foreground mx-auto max-w-2xl text-lg">
+					Інноваційні рішення, створені з любов'ю для студентської спільноти
 				</p>
 			</div>
-		</div>
 
-		<div class="grid grid-cols-1 gap-8 sm:grid-cols-4">
-			<StatsCard
-				v-for="stat in stats"
-				:key="stat.id"
-				:value="stat.value"
-				:label="stat.label"
-				:is-time="stat.isTime"
-			/>
+			<div class="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
+				<ProductCard
+					v-for="product in products"
+					:key="product.name"
+					:product="product"
+					class="group transition-all duration-500 hover:shadow-2xl"
+				/>
+			</div>
+		</section>
 
-			<StatsCard
-				:value="'2+'"
-				:label="'Ми працюємо для Вас вже'"
-				:is-time="true"
-				:start-date="'2023-02-16'"
-				class="sm:col-span-4"
-			/>
-
-			<ActionCard
-				title="Наш телеграм"
-				button-text="Приєднатися"
-				link="https://t.me/mindenit"
-				class="sm:col-span-2"
-			/>
-
-			<ActionCard
-				title="Наша банка"
-				button-text="Задонатити"
-				link="https://send.monobank.ua/jar/2GW9aAQNXE"
-				class="sm:col-span-2"
-			/>
-		</div>
-
-		<div class="bg-fiord-600 dark:bg-fiord-400 h-px w-full"></div>
-
-		<h1 class="text-secondary-foreground text-center text-3xl font-bold">Наші продукти</h1>
-
-		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-			<ProductCard
-				v-for="product in products"
-				:key="product.name"
-				:product="product"
-				:data-aos="product.aos"
-			/>
-		</div>
+		<section class="relative mb-16 overflow-hidden rounded-2xl py-16">
+			<div
+				class="from-royal-blue-500/10 to-christi-500/10 absolute inset-0 bg-gradient-to-br via-transparent"
+			></div>
+			<div class="relative space-y-6 text-center">
+				<h3 class="text-secondary-foreground text-3xl font-bold">
+					Разом ми створюємо майбутнє освіти
+				</h3>
+				<p class="text-muted-foreground mx-auto max-w-3xl text-lg leading-relaxed">
+					Кожен проект — це крок до того, щоб зробити навчання простішим, цікавішим та ефективнішим.
+					Ми віримо, що технології можуть змінити світ освіти на краще.
+				</p>
+				<div class="flex justify-center pt-4">
+					<div class="text-royal-blue-600 dark:text-royal-blue-400 flex items-center gap-2">
+						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+							<path
+								fill-rule="evenodd"
+								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+						<span class="font-semibold">Інновації • Якість • Спільнота</span>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </template>
