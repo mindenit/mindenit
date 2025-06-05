@@ -1,23 +1,16 @@
 <script setup lang="ts">
-useHead({
-	title: 'Меморандум про співпрацю команди "Mindenit"',
-	meta: [
-		{
-			name: 'description',
-			content:
-				'Официальный меморандум о сотрудничестве команды Mindenit - документ, определяющий принципы взаимодействия, права и обязанности участников команды.',
-		},
-		{
-			property: 'og:title',
-			content: 'Меморандум про співпрацю команди "Mindenit"',
-		},
-		{
-			property: 'og:description',
-			content:
-				'Официальный документ команды Mindenit о принципах сотрудничества, интеллектуальной собственности и этических принципах.',
-		},
-	],
+const pageTitle = `Наш меморандум`
+const pageDescription =
+	'Меморандум про співпрацю команди "Mindenit" визначає основні принципи взаємодії, права та обов\'язки учасників, а також правила щодо інтелектуальної власності, комерційної діяльності та етичних норм.'
+
+useSeoMeta({
+	title: pageTitle,
+	description: pageDescription,
+	ogTitle: pageTitle,
+	ogDescription: pageDescription,
 })
+
+defineOgImageComponent('Mindenit')
 </script>
 
 <template>
