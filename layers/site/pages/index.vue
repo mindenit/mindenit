@@ -71,12 +71,7 @@ const products = [
 			</div>
 
 			<div class="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
-				<ProductCard
-					v-for="product in products"
-					:key="product.name"
-					:product="product"
-					class="group transition-all duration-500 hover:shadow-2xl"
-				/>
+				<ProductCard v-for="product in products" :key="product.name" :product="product" />
 			</div>
 		</section>
 
