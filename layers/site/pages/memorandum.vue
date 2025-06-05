@@ -1,40 +1,27 @@
 <script setup lang="ts">
-useHead({
-	title: 'Меморандум про співпрацю команди "Mindenit"',
-	meta: [
-		{
-			name: 'description',
-			content:
-				'Официальный меморандум о сотрудничестве команды Mindenit - документ, определяющий принципы взаимодействия, права и обязанности участников команды.',
-		},
-		{
-			property: 'og:title',
-			content: 'Меморандум про співпрацю команди "Mindenit"',
-		},
-		{
-			property: 'og:description',
-			content:
-				'Официальный документ команды Mindenit о принципах сотрудничества, интеллектуальной собственности и этических принципах.',
-		},
-	],
+const pageTitle = `Наш меморандум`
+const pageDescription =
+	'Меморандум про співпрацю команди "Mindenit" визначає основні принципи взаємодії, права та обов\'язки учасників, а також правила щодо інтелектуальної власності, комерційної діяльності та етичних норм.'
+
+useSeoMeta({
+	title: pageTitle,
+	description: pageDescription,
+	ogTitle: pageTitle,
+	ogDescription: pageDescription,
 })
+
+defineOgImageComponent('Mindenit')
 </script>
 
 <template>
 	<div class="container mx-auto max-w-4xl px-4 py-12">
-		<!-- Заголовок документа -->
-		<header class="mb-12 text-center">
-			<h1
-				class="text-secondary-foreground from-royal-blue-600 to-christi-500 mb-4 bg-gradient-to-r bg-clip-text
-					text-4xl font-bold text-transparent md:text-5xl"
-			>
-				Меморандум про співпрацю команди "Mindenit"
-			</h1>
-			<div class="text-muted-foreground space-y-1">
+		<PageHeader>
+			<template #title> Меморандум про співпрацю команди "Mindenit" </template>
+			<template #meta>
 				<p class="text-lg"><strong>Дата:</strong> 02.06.2025</p>
 				<p class="text-lg"><strong>Місце:</strong> Харків, Україна</p>
-			</div>
-		</header>
+			</template>
+		</PageHeader>
 
 		<div
 			class="bg-card/80 border-border/50 space-y-8 rounded-2xl border p-8 shadow-xl backdrop-blur-md md:p-12"
@@ -519,10 +506,7 @@ useHead({
 			</section>
 
 			<footer class="border-border/30 mt-12 border-t pt-8 text-center">
-				<div
-					class="from-royal-blue-50 to-christi-50 dark:from-royal-blue-950/30 dark:to-christi-950/30 rounded-xl
-						bg-gradient-to-r p-6"
-				>
+				<GradientSection tag="div" variant="footer" size="sm" align="center" class="p-6">
 					<p class="text-muted-foreground text-sm italic">
 						Документ затверджено учасниками команди "Mindenit" та є чинним з дати підписання.
 					</p>
@@ -530,7 +514,7 @@ useHead({
 						<Icon name="lucide:file-check" class="size-4" />
 						<span>Офіційний документ команди Mindenit</span>
 					</div>
-				</div>
+				</GradientSection>
 			</footer>
 		</div>
 	</div>

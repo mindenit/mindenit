@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import GradientText from '~/core/components/GradientText.vue'
+</script>
+
 <template>
 	<div class="relative min-h-screen overflow-x-hidden">
 		<div class="absolute top-0 right-0 left-0 z-50 p-4 md:p-8">
@@ -41,7 +45,7 @@
 						<img
 							class="group-hover:shadow-3xl relative size-24 rounded-2xl shadow-2xl transition-all duration-700
 								group-hover:scale-110 group-hover:rotate-3"
-							src="/logo.webp"
+							src="/mindenit.png"
 							alt="Mindenit logo"
 						/>
 					</div>
@@ -49,14 +53,9 @@
 
 				<div class="space-y-6">
 					<h1 class="text-5xl font-black tracking-tight">
-						<span
-							class="from-royal-blue-600 via-royal-blue-500 to-christi-600 dark:from-royal-blue-400
-								dark:via-royal-blue-300 dark:to-christi-400 animate-pulse bg-gradient-to-r bg-clip-text
-								text-transparent"
-							style="animation-duration: 4s"
-						>
+						<GradientText class="animate-pulse" style="animation-duration: 4s">
 							Mindenit
-						</span>
+						</GradientText>
 					</h1>
 
 					<div class="mx-auto max-w-4xl space-y-6">

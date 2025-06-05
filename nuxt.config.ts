@@ -1,4 +1,5 @@
 import tailwindcss from '@tailwindcss/vite'
+import { defineOrganization } from 'nuxt-schema-org/schema'
 
 export default defineNuxtConfig({
 	compatibilityDate: '2025-05-15',
@@ -28,6 +29,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		'shadcn-nuxt',
 		'@vueuse/nuxt',
+		'@nuxtjs/seo',
 	],
 	icon: {
 		provider: 'iconify',
@@ -46,4 +48,36 @@ export default defineNuxtConfig({
 		componentDir: './core/components/ui',
 	},
 	css: ['~/core/assets/css/main.css'],
+	site: {
+		url: 'https://mindenit.org',
+		name: 'Mindenit - Інноваційні Програмні Рішення',
+		description:
+			'Mindenit спеціалізується на розробці передових веб- та мобільних додатків. Відкрийте для себе наші проекти, знання та команду експертів.',
+		defaultLocale: 'uk',
+		trailingSlash: false,
+		indexable: true,
+		debug: process.env.NODE_ENV === 'development',
+	},
+	schemaOrg: {
+		identity: defineOrganization({
+			name: 'Mindenit',
+			url: 'https://mindenit.org',
+			logo: '/mindenit.png',
+			sameAs: ['https://github.com/mindenit', 'https://www.linkedin.com/company/mindenit/'],
+		}),
+	},
+	robots: {
+		sitemap: '/sitemap.xml',
+	},
+	seo: {
+		redirectToCanonicalSiteUrl: true,
+		fallbackTitle: true,
+		automaticDefaults: true,
+		metaDataFiles: true,
+		meta: {
+			ogType: 'website',
+			twitterCard: 'summary_large_image',
+			ogLocale: 'uk_UA',
+		},
+	},
 })

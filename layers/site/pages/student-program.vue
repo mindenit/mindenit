@@ -1,21 +1,15 @@
 <script setup lang="ts">
-useHead({
-	title: 'В розробці - Mindenit',
-	meta: [
-		{
-			name: 'description',
-			content: 'Ця функція зараз в розробці. Слідкуйте за оновленнями в наших соцмережах.',
-		},
-		{
-			property: 'og:title',
-			content: 'В розробці - Mindenit',
-		},
-		{
-			property: 'og:description',
-			content: 'Скоро тут буде щось неймовірне! Слідкуйте за оновленнями.',
-		},
-	],
+const pageTitle = `Mindenit Student Program`
+const pageDescription = 'Ця сторінка знаходиться в розробці. Слідкуйте за оновленнями!'
+
+useSeoMeta({
+	title: pageTitle,
+	description: pageDescription,
+	ogTitle: pageTitle,
+	ogDescription: pageDescription,
 })
+
+defineOgImageComponent('Mindenit')
 </script>
 
 <template>
