@@ -70,6 +70,8 @@ const products = [
 			</div>
 		</section>
 
+		<Separator />
+
 		<GradientSection variant="primary" size="md" align="center">
 			<h3 class="text-secondary-foreground text-3xl font-bold">
 				Разом ми створюємо майбутнє освіти

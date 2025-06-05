@@ -1,5 +1,5 @@
 <template>
-	<div class="relative mb-16">
+	<div class="relative">
 		<div
 			class="via-royal-blue-300 dark:via-royal-blue-700 h-px bg-gradient-to-r from-transparent to-transparent"
 		></div>
