@@ -46,4 +46,8 @@ export default defineNuxtConfig({
 		componentDir: './core/components/ui',
 	},
 	css: ['~/core/assets/css/main.css'],
+	sourcemap: {
+		server: false,
+		client: false,
+	},
 })
