@@ -25,8 +25,8 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
 			cn(
 				`data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in
 				data-[motion^=to-]:fade-out`,
-				'data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52',
-				'data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52',
+				'data-[motion=from-end]:fade-in-from-right-52 data-[motion=from-start]:fade-in-from-left-52',
+				'data-[motion=to-end]:fade-out-to-right-52 data-[motion=to-start]:fade-out-to-left-52',
 				'top-0 left-0 w-full p-3 pr-3.5 md:absolute md:w-auto',
 				'bg-card/95 border-border/60 rounded-2xl border shadow-2xl backdrop-blur-lg',
 				'before:from-royal-blue-500/5 before:to-christi-500/5 before:absolute before:inset-0 before:-z-10',
