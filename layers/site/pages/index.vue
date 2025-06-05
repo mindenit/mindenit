@@ -1,29 +1,16 @@
 <script setup lang="ts">
-useHead({
-	title: 'Mindenit',
-	meta: [
-		{
-			name: 'description',
-			content:
-				'Mindenit - команда ентузіастів-студентів, що створює технологічні рішення для полегшення студентського життя через сайти, боти та додатки',
-		},
-		{
-			name: 'keywords',
-			content:
-				'mindenit, розклад університету, відповіді на тести, студентські проекти, технологічні рішення для студентів, біржа студентських робіт, emperor.uno',
-		},
-		{ name: 'robots', content: 'index, follow' },
-		{ name: 'language', content: 'uk' },
-		{ property: 'og:title', content: 'Mindenit - Технологічні рішення для студентів' },
-		{
-			property: 'og:description',
-			content: 'Ми створюємо сучасні технологічні рішення для покращення студентського життя',
-		},
-		{ property: 'og:image', content: '/img/mindenit.jpg' },
-		{ property: 'og:locale', content: 'uk_UA' },
-	],
-	link: [{ rel: 'icon', type: 'image/jpeg', href: '/img/mindenit.jpg' }],
+const pageTitle = `Головна`
+const pageDescription =
+	'Mindenit - інноваційні IT-рішення для студентів. Ми створюємо продукти, які роблять навчання простішим і ефективнішим.'
+
+useSeoMeta({
+	title: pageTitle,
+	description: pageDescription,
+	ogTitle: pageTitle,
+	ogDescription: pageDescription,
 })
+
+defineOgImageComponent('Mindenit')
 
 definePageMeta({
 	layout: 'home',

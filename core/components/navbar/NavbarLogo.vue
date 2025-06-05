@@ -14,7 +14,7 @@ defineProps<Props>()
 					transition-opacity duration-300 group-hover:opacity-30"
 			/>
 			<img
-				src="/logo.webp"
+				src="/mindenit.png"
 				alt="Logo"
 				class="relative h-10 w-10 rounded-xl shadow-sm transition-all duration-300 group-hover:scale-110
 					group-hover:shadow-md"

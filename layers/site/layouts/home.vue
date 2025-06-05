@@ -45,7 +45,7 @@ import GradientText from '~/core/components/GradientText.vue'
 						<img
 							class="group-hover:shadow-3xl relative size-24 rounded-2xl shadow-2xl transition-all duration-700
 								group-hover:scale-110 group-hover:rotate-3"
-							src="/logo.webp"
+							src="/mindenit.png"
 							alt="Mindenit logo"
 						/>
 					</div>
