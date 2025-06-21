@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useForm } from 'vee-validate'
+import { toTypedSchema } from '@vee-validate/zod'
+import * as z from 'zod'
+
 const pageTitle = 'Приєднайся до команди розробників'
 const pageDescription =
 	'Команда розробників шукає Frontend та Backend розробників для роботи над проектами з використанням сучасних технологій'
@@ -12,44 +16,34 @@ useSeoMeta({
 
 defineOgImageComponent('Mindenit')
 
-const name = ref('')
-const telegram = ref('')
 const isSubmitting = ref(false)
 const submitStatus = ref<'idle' | 'success' | 'error'>('idle')
 const errorMessage = ref('')
 
-const nameError = ref('')
-const telegramError = ref('')
+const formSchema = toTypedSchema(
+	z.object({
+		name: z
+			.string({
+				required_error: "Ім'я є обов'язковим",
+			})
+			.min(2, "Ім'я повинно містити принаймні 2 символи")
+			.max(50, "Ім'я не повинно перевищувати 50 символів"),
+		telegram: z
+			.string({
+				required_error: 'Telegram профіль є обов’язковим',
+			})
+			.refine(
+				value => value.startsWith('@') || value.includes('t.me/'),
+				'Введіть коректний Telegram профіль (@username або t.me/username)'
+			),
+	})
+)
 
-const validateForm = () => {
-	let isValid = true
+const form = useForm({
+	validationSchema: formSchema,
+})
 
-	if (!name.value.trim()) {
-		nameError.value = "Ім'я є обов'язковим"
-		isValid = false
-	} else if (name.value.trim().length < 2) {
-		nameError.value = "Ім'я повинно містити принаймні 2 символи"
-		isValid = false
-	} else {
-		nameError.value = ''
-	}
-
-	if (!telegram.value.trim()) {
-		telegramError.value = "Telegram профіль є обов'язковим"
-		isValid = false
-	} else if (!telegram.value.startsWith('@') && !telegram.value.includes('t.me/')) {
-		telegramError.value = 'Введіть коректний Telegram профіль (@username або t.me/username)'
-		isValid = false
-	} else {
-		telegramError.value = ''
-	}
-
-	return isValid
-}
-
-const submitForm = async () => {
-	if (!validateForm()) return
-
+const onSubmit = form.handleSubmit(async values => {
 	isSubmitting.value = true
 	submitStatus.value = 'idle'
 
@@ -65,12 +59,12 @@ const submitForm = async () => {
 					fields: [
 						{
 							name: "👤 Ім'я",
-							value: name.value.trim(),
+							value: values.name,
 							inline: true,
 						},
 						{
 							name: '📱 Telegram',
-							value: telegram.value.trim(),
+							value: values.telegram,
 							inline: true,
 						},
 					],
@@ -95,8 +89,7 @@ const submitForm = async () => {
 		}
 
 		submitStatus.value = 'success'
-		name.value = ''
-		telegram.value = ''
+		form.resetForm()
 	} catch (error) {
 		console.error('Submit error:', error)
 		submitStatus.value = 'error'
@@ -104,7 +97,7 @@ const submitForm = async () => {
 	} finally {
 		isSubmitting.value = false
 	}
-}
+})
 
 const frontendTech = [
 	{ name: 'Vue.js', icon: 'logos:vue' },
@@ -235,32 +228,38 @@ const backendTech = [
 					</p>
 				</div>
 
-				<form class="space-y-6" @submit.prevent="submitForm">
-					<div class="space-y-2">
-						<Label for="name">Ім'я *</Label>
-						<Input
-							id="name"
-							v-model="name"
-							type="text"
-							placeholder="Твоє ім'я"
-							:disabled="isSubmitting"
-							:class="{ 'border-red-500': nameError }"
-						/>
-						<p v-if="nameError" class="text-sm text-red-500">{{ nameError }}</p>
-					</div>
+				<form class="space-y-6" @submit="onSubmit">
+					<FormField v-slot="{ componentField }" name="name">
+						<FormItem>
+							<FormLabel for="name">Ім'я *</FormLabel>
+							<FormControl>
+								<Input
+									id="name"
+									type="text"
+									placeholder="Твоє ім'я"
+									:disabled="isSubmitting"
+									v-bind="componentField"
+								/>
+							</FormControl>
+							<FormMessage />
+						</FormItem>
+					</FormField>
 
-					<div class="space-y-2">
-						<Label for="telegram">Telegram профіль *</Label>
-						<Input
-							id="telegram"
-							v-model="telegram"
-							type="text"
-							placeholder="@username або t.me/username"
-							:disabled="isSubmitting"
-							:class="{ 'border-red-500': telegramError }"
-						/>
-						<p v-if="telegramError" class="text-sm text-red-500">{{ telegramError }}</p>
-					</div>
+					<FormField v-slot="{ componentField }" name="telegram">
+						<FormItem>
+							<FormLabel for="telegram">Telegram профіль *</FormLabel>
+							<FormControl>
+								<Input
+									id="telegram"
+									type="text"
+									placeholder="@username або t.me/username"
+									:disabled="isSubmitting"
+									v-bind="componentField"
+								/>
+							</FormControl>
+							<FormMessage />
+						</FormItem>
+					</FormField>
 
 					<Button
 						type="submit"
