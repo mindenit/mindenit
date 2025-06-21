@@ -20,7 +20,11 @@ export default defineNuxtConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
-
+	runtimeConfig: {
+		public: {
+			hiringWebhookUrl: process.env.HIRING_WEBHOOK_URL,
+		},
+	},
 	modules: [
 		'@nuxt/eslint',
 		'@nuxt/fonts',

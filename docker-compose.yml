@@ -9,4 +9,5 @@ services:
       - '${PORT:-3000}:3000'
     environment:
       - NODE_ENV=production
+      - HIRING_WEBHOOK_URL=${HIRING_WEBHOOK_URL:-}
     restart: unless-stopped
