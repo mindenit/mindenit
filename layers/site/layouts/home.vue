@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import GradientText from '~/core/components/GradientText.vue'
-</script>
-
 <template>
 	<div class="relative min-h-screen overflow-x-hidden">
 		<div class="absolute top-0 right-0 left-0 z-50 p-4 md:p-8">
@@ -85,11 +81,11 @@ import GradientText from '~/core/components/GradientText.vue'
 					<div class="text-center">
 						<NumberTicker
 							class="text-christi-600 dark:text-christi-400 text-3xl font-black"
-							:value="3"
+							:value="2"
 							:duration="2000"
 							transition="easeOutQuint"
 						/>
-						<div class="text-muted-foreground text-sm font-medium">Успішних проєкти</div>
+						<div class="text-muted-foreground text-sm font-medium">Успішні проєкти</div>
 					</div>
 					<div class="text-center">
 						<NumberTicker
