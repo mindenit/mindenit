@@ -30,13 +30,6 @@ const products = [
 		logo: '/answers-logo.png',
 		link: 'https://answers.mindenit.org/',
 	},
-	{
-		name: 'Glimpse',
-		description:
-			'Біржа робіт, на якій студенти швидко та прозоро можуть покупати та продавати роботи',
-		logo: null,
-		link: null,
-	},
 ]
 </script>
 
@@ -52,7 +45,7 @@ const products = [
 				</p>
 			</div>
 
-			<div class="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
+			<div class="grid grid-cols-2 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
 				<ProductCard v-for="product in products" :key="product.name" :product="product" />
 			</div>
 		</section>
