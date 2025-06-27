@@ -14,6 +14,10 @@ useSeoMeta({
 	ogDescription: pageDescription,
 })
 
+definePageMeta({
+	hideNavbar: true,
+})
+
 defineOgImageComponent('Mindenit')
 
 const isSubmitting = ref(false)
@@ -115,8 +119,11 @@ const backendTech = [
 </script>
 
 <template>
-	<div class="container mx-auto max-w-4xl px-4 py-12">
-		<div class="mb-12 text-center">
+	<div
+		class="container mx-auto min-h-full max-w-4xl flex-col items-center justify-center max-md:px-4 max-md:py-8
+			md:flex"
+	>
+		<div class="text-center">
 			<PageHeader>
 				<template #title> Приєднайся до команди </template>
 				<template #meta>
