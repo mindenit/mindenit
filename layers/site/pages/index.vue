@@ -23,13 +23,6 @@ const products = [
 		logo: '/schedule-logo.png',
 		link: 'https://sh.mindenit.org/',
 	},
-	{
-		name: 'Answers',
-		description:
-			'Сайт з відповідями на тести для студентів, яка керується студентами. Аналог "Золотого Трону Імператора (emperor.uno)"',
-		logo: '/answers-logo.png',
-		link: 'https://answers.pp.ua',
-	},
 ]
 </script>
 
@@ -45,7 +38,7 @@ const products = [
 				</p>
 			</div>
 
-			<div class="grid grid-cols-2 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
+			<div class="grid grid-cols-1 gap-8">
 				<ProductCard v-for="product in products" :key="product.name" :product="product" />
 			</div>
 		</section>

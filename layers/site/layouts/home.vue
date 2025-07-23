@@ -81,11 +81,11 @@
 					<div class="text-center">
 						<NumberTicker
 							class="text-christi-600 dark:text-christi-400 text-3xl font-black"
-							:value="2"
+							:value="1"
 							:duration="2000"
 							transition="easeOutQuint"
 						/>
-						<div class="text-muted-foreground text-sm font-medium">Успішні проєкти</div>
+						<div class="text-muted-foreground text-sm font-medium">Успішний проєкт</div>
 					</div>
 					<div class="text-center">
 						<NumberTicker
