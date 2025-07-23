@@ -28,7 +28,7 @@ const products = [
 		description:
 			'Сайт з відповідями на тести для студентів, яка керується студентами. Аналог "Золотого Трону Імператора (emperor.uno)"',
 		logo: '/answers-logo.png',
-		link: 'https://answers.mindenit.org/',
+		link: 'https://answers.pp.ua',
 	},
 ]
 </script>
