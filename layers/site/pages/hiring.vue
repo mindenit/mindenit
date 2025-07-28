@@ -5,7 +5,7 @@ import * as z from 'zod'
 
 const pageTitle = 'Приєднайся до команди розробників'
 const pageDescription =
-	'Команда розробників шукає Frontend та Backend розробників для роботи над проектами з використанням сучасних технологій'
+	'Команда розробників шукає Frontend та Backend розробників і дизайнера для роботи над проектами з використанням сучасних технологій'
 
 useSeoMeta({
 	title: pageTitle,
@@ -34,7 +34,7 @@ const formSchema = toTypedSchema(
 			.max(50, "Ім'я не повинно перевищувати 50 символів"),
 		telegram: z
 			.string({
-				required_error: 'Telegram профіль є обов’язковим',
+				required_error: "Telegram профіль є обов'язковим",
 			})
 			.refine(
 				value => value.startsWith('@') || value.includes('t.me/'),
@@ -103,24 +103,70 @@ const onSubmit = form.handleSubmit(async values => {
 	}
 })
 
-const frontendTech = [
-	{ name: 'Vue.js', icon: 'logos:vue' },
-	{ name: 'Nuxt.js', icon: 'logos:nuxt-icon' },
-	{ name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-	{ name: 'TypeScript', icon: 'logos:typescript-icon' },
+const positions = [
+	{
+		id: 'frontend',
+		title: 'Frontend розробник',
+		subtitle: 'Створення користувацьких інтерфейсів',
+		description:
+			'Розробка сучасних веб-додатків з використанням Vue.js екосистеми та найкращих практик UI/UX дизайну.',
+		icon: 'lucide:code',
+		iconColor: 'blue',
+		technologies: [
+			{ name: 'Vue.js', icon: 'logos:vue' },
+			{ name: 'Nuxt.js', icon: 'logos:nuxt-icon' },
+			{ name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+			{ name: 'TypeScript', icon: 'logos:typescript-icon' },
+		],
+	},
+	{
+		id: 'backend',
+		title: 'Backend розробник',
+		subtitle: 'Розробка серверної логіки',
+		description:
+			'Створення надійних API, робота з базами даних та забезпечення високої продуктивності серверних додатків.',
+		icon: 'lucide:server',
+		iconColor: 'emerald',
+		technologies: [
+			{ name: 'Node.js', icon: 'logos:nodejs-icon' },
+			{ name: 'PostgreSQL', icon: 'logos:postgresql' },
+			{ name: 'Redis', icon: 'logos:redis' },
+			{ name: 'TypeScript', icon: 'logos:typescript-icon' },
+		],
+	},
+	{
+		id: 'designer',
+		title: 'UI/UX дизайнер',
+		subtitle: 'Створення інтерфейсів та досвіду користувачів',
+		description:
+			'Розробка інтуїтивних інтерфейсів, створення дизайн-систем та забезпечення відмінного користувацького досвіду.',
+		icon: 'lucide:palette',
+		iconColor: 'purple',
+		technologies: [
+			{ name: 'Figma', icon: 'logos:figma' },
+			{ name: 'Adobe XD', icon: 'logos:adobe-xd' },
+			{ name: 'Photoshop', icon: 'logos:adobe-photoshop' },
+			{ name: 'Illustrator', icon: 'logos:adobe-illustrator' },
+		],
+	},
 ]
 
-const backendTech = [
-	{ name: 'Node.js', icon: 'logos:nodejs-icon' },
-	{ name: 'PostgreSQL', icon: 'logos:postgresql' },
-	{ name: 'Redis', icon: 'logos:redis' },
-	{ name: 'TypeScript', icon: 'logos:typescript-icon' },
-]
+const getIconColorClasses = (color: string) => {
+	const colorMap = {
+		blue: 'bg-blue-500/10 text-blue-600',
+		emerald: 'bg-emerald-500/10 text-emerald-600',
+		purple: 'bg-purple-500/10 text-purple-600',
+		orange: 'bg-orange-500/10 text-orange-600',
+		red: 'bg-red-500/10 text-red-600',
+		indigo: 'bg-indigo-500/10 text-indigo-600',
+	}
+	return colorMap[color as keyof typeof colorMap] || colorMap.blue
+}
 </script>
 
 <template>
 	<div
-		class="container mx-auto min-h-full max-w-4xl flex-col items-center justify-center max-md:px-4 max-md:py-8
+		class="container mx-auto min-h-full max-w-7xl flex-col items-center justify-center max-md:px-4 max-md:py-8
 			md:flex"
 	>
 		<div class="text-center">
@@ -128,8 +174,7 @@ const backendTech = [
 				<template #title> Приєднайся до команди </template>
 				<template #meta>
 					<p class="text-muted-foreground mx-auto max-w-2xl text-xl">
-						Ми шукаємо талановитих Frontend та Backend розробників для роботи над інноваційними
-						проектами
+						Ми шукаємо талановитих спеціалістів для роботи над інноваційними проектами
 					</p>
 				</template>
 			</PageHeader>
@@ -148,72 +193,43 @@ const backendTech = [
 				</AlertDescription>
 			</Alert>
 
-			<div class="grid gap-6 md:grid-cols-2">
+			<div class="grid auto-rows-fr gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
 				<div
+					v-for="position in positions"
+					:key="position.id"
 					class="from-royal-blue-50 to-christi-50 dark:from-royal-blue-950/20 dark:to-christi-950/20 border-border/50
-						space-y-4 rounded-xl border bg-gradient-to-r p-6"
+						flex flex-col space-y-4 rounded-xl border bg-gradient-to-r p-6 transition-all duration-200
+						hover:scale-[1.02] hover:shadow-lg"
 				>
 					<div class="flex items-center gap-3">
-						<div class="rounded-lg bg-blue-500/10 p-2">
-							<Icon name="lucide:code" class="h-6 w-6 text-blue-600" />
+						<div class="rounded-lg p-2" :class="getIconColorClasses(position.iconColor)">
+							<Icon :name="position.icon" class="h-6 w-6" />
 						</div>
-						<div>
-							<h3 class="text-secondary-foreground text-xl font-bold">Frontend розробник</h3>
-							<p class="text-muted-foreground">Створення користувацьких інтерфейсів</p>
+						<div class="min-w-0 flex-1">
+							<h3 class="text-secondary-foreground truncate text-xl font-bold">
+								{{ position.title }}
+							</h3>
+							<p class="text-muted-foreground truncate text-sm">{{ position.subtitle }}</p>
 						</div>
 					</div>
 
-					<p class="text-muted-foreground text-sm leading-relaxed">
-						Розробка сучасних веб-додатків з використанням Vue.js екосистеми та найкращих практик
-						UI/UX дизайну.
+					<p class="text-muted-foreground flex-1 text-sm leading-relaxed">
+						{{ position.description }}
 					</p>
 
-					<div>
-						<h4 class="text-secondary-foreground mb-2 text-sm font-semibold">Технології:</h4>
+					<div class="flex-shrink-0">
+						<h4 class="text-secondary-foreground mb-2 text-sm font-semibold">
+							{{ position.id === 'designer' ? 'Інструменти:' : 'Технології:' }}
+						</h4>
 						<div class="flex flex-wrap gap-2">
 							<Badge
-								v-for="tech in frontendTech"
+								v-for="tech in position.technologies"
 								:key="tech.name"
 								variant="secondary"
-								class="flex items-center gap-1"
+								class="flex items-center gap-1 text-xs"
 							>
-								<Icon :name="tech.icon" class="h-3 w-3" />
-								{{ tech.name }}
-							</Badge>
-						</div>
-					</div>
-				</div>
-
-				<div
-					class="from-royal-blue-50 to-christi-50 dark:from-royal-blue-950/20 dark:to-christi-950/20 border-border/50
-						space-y-4 rounded-xl border bg-gradient-to-r p-6"
-				>
-					<div class="flex items-center gap-3">
-						<div class="rounded-lg bg-emerald-500/10 p-2">
-							<Icon name="lucide:server" class="h-6 w-6 text-emerald-600" />
-						</div>
-						<div>
-							<h3 class="text-secondary-foreground text-xl font-bold">Backend розробник</h3>
-							<p class="text-muted-foreground">Розробка серверної логіки</p>
-						</div>
-					</div>
-
-					<p class="text-muted-foreground text-sm leading-relaxed">
-						Створення надійних API, робота з базами даних та забезпечення високої продуктивності
-						серверних додатків.
-					</p>
-
-					<div>
-						<h4 class="text-secondary-foreground mb-2 text-sm font-semibold">Технології:</h4>
-						<div class="flex flex-wrap gap-2">
-							<Badge
-								v-for="tech in backendTech"
-								:key="tech.name"
-								variant="secondary"
-								class="flex items-center gap-1"
-							>
-								<Icon :name="tech.icon" class="h-3 w-3" />
-								{{ tech.name }}
+								<Icon :name="tech.icon" class="h-3 w-3 flex-shrink-0" />
+								<span class="truncate">{{ tech.name }}</span>
 							</Badge>
 						</div>
 					</div>
