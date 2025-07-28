@@ -142,12 +142,7 @@ const positions = [
 			'Розробка інтуїтивних інтерфейсів, створення дизайн-систем та забезпечення відмінного користувацького досвіду.',
 		icon: 'lucide:palette',
 		iconColor: 'purple',
-		technologies: [
-			{ name: 'Figma', icon: 'logos:figma' },
-			{ name: 'Adobe XD', icon: 'logos:adobe-xd' },
-			{ name: 'Photoshop', icon: 'logos:adobe-photoshop' },
-			{ name: 'Illustrator', icon: 'logos:adobe-illustrator' },
-		],
+		technologies: [{ name: 'Figma', icon: 'logos:figma' }],
 	},
 ]
 
