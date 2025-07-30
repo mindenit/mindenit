@@ -14,10 +14,6 @@ useSeoMeta({
 	ogDescription: pageDescription,
 })
 
-definePageMeta({
-	hideNavbar: true,
-})
-
 defineOgImageComponent('Mindenit')
 
 const isSubmitting = ref(false)
@@ -161,8 +157,8 @@ const getIconColorClasses = (color: string) => {
 
 <template>
 	<div
-		class="container mx-auto min-h-full max-w-7xl flex-col items-center justify-center max-md:px-4 max-md:py-8
-			md:flex"
+		class="container mx-auto min-h-full max-w-7xl flex-col items-center justify-center pt-10 max-md:px-4
+			max-md:py-8 md:flex"
 	>
 		<div class="text-center">
 			<PageHeader>
