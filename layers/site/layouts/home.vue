@@ -1,3 +1,22 @@
+<script setup lang="ts">
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from '@/core/components/ui/tooltip'
+
+const yearsOfExperience = ref(0)
+
+onMounted(() => {
+	const startDate = new Date('2023-08-22')
+	const currentDate = new Date()
+	const diffTime = Math.abs(currentDate.getTime() - startDate.getTime())
+	const diffYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 365.25))
+	yearsOfExperience.value = diffYears
+})
+</script>
+
 <template>
 	<div class="relative min-h-screen overflow-x-hidden">
 		<div class="absolute top-0 right-0 left-0 z-50 p-4 md:p-8">
@@ -67,47 +86,56 @@
 					</div>
 				</div>
 
-				<div class="grid grid-cols-4 gap-8 py-6 max-sm:grid-cols-2">
-					<div class="text-center">
-						<NumberTicker
-							class="text-royal-blue-600 dark:text-royal-blue-400 text-3xl font-black"
-							:value="550"
-							suffix="+"
-							:duration="2000"
-							transition="easeOutQuint"
-						/>
-						<div class="text-muted-foreground text-sm font-medium">Активних користувачів</div>
+				<TooltipProvider>
+					<div class="grid grid-cols-4 gap-8 py-6 max-sm:grid-cols-2">
+						<div class="text-center">
+							<NumberTicker
+								class="text-royal-blue-600 dark:text-royal-blue-400 text-3xl font-black"
+								:value="550"
+								suffix="+"
+								:duration="2000"
+								transition="easeOutQuint"
+							/>
+							<div class="text-muted-foreground text-sm font-medium">Активних користувачів</div>
+						</div>
+						<div class="text-center">
+							<NumberTicker
+								class="text-christi-600 dark:text-christi-400 text-3xl font-black"
+								:value="1"
+								:duration="2000"
+								transition="easeOutQuint"
+							/>
+							<div class="text-muted-foreground text-sm font-medium">Успішний проєкт</div>
+						</div>
+						<Tooltip>
+							<TooltipTrigger as-child>
+								<div class="text-center">
+									<NumberTicker
+										class="text-amaranth-600 dark:text-amaranth-400 text-3xl font-black"
+										:value="yearsOfExperience"
+										suffix="+"
+										:duration="2000"
+										transition="easeOutQuint"
+									/>
+									<div class="text-muted-foreground text-sm font-medium">Роки досвіду</div>
+								</div>
+							</TooltipTrigger>
+							<TooltipContent>
+								<p>Працюємо з 22.08.2023</p>
+							</TooltipContent>
+						</Tooltip>
+						<div class="text-center">
+							<NumberTicker
+								class="text-3xl font-black text-amber-600 dark:text-amber-400"
+								:value="700"
+								suffix="+"
+								:duration="2000"
+								transition="easeOutQuint"
+							/>
+							<div class="text-muted-foreground text-sm font-medium">Задоволених студентів</div>
+						</div>
 					</div>
-					<div class="text-center">
-						<NumberTicker
-							class="text-christi-600 dark:text-christi-400 text-3xl font-black"
-							:value="1"
-							:duration="2000"
-							transition="easeOutQuint"
-						/>
-						<div class="text-muted-foreground text-sm font-medium">Успішний проєкт</div>
-					</div>
-					<div class="text-center">
-						<NumberTicker
-							class="text-amaranth-600 dark:text-amaranth-400 text-3xl font-black"
-							:value="2"
-							suffix="+"
-							:duration="2000"
-							transition="easeOutQuint"
-						/>
-						<div class="text-muted-foreground text-sm font-medium">Роки досвіду</div>
-					</div>
-					<div class="text-center">
-						<NumberTicker
-							class="text-3xl font-black text-amber-600 dark:text-amber-400"
-							:value="700"
-							suffix="+"
-							:duration="2000"
-							transition="easeOutQuint"
-						/>
-						<div class="text-muted-foreground text-sm font-medium">Задоволених студентів</div>
-					</div>
-				</div>
+				</TooltipProvider>
 
 				<div class="flex flex-wrap justify-center gap-4 pt-4">
 					<Button
