@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const pageTitle = `Головна`
 const pageDescription =
-	'Mindenit - інноваційні IT-рішення для студентів. Ми створюємо продукти, які роблять навчання простішим і ефективнішим.'
+	'Mindenit - інноваційні IT-рішення. Ми створюємо продукти, які роблять навчання простішим і ефективнішим.'
 
 useSeoMeta({
 	title: pageTitle,
@@ -19,7 +19,7 @@ definePageMeta({
 const products = [
 	{
 		name: 'Розклад',
-		description: 'Сайт з розкладом для студентів університету',
+		description: 'Сайт з розкладом для студентів університету ХНУРЕ',
 		logo: '/schedule-logo.png',
 		link: 'https://sh.mindenit.org/',
 	},

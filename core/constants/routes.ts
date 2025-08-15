@@ -8,6 +8,10 @@ export const navigationItems: NavigationItem[] = [
 		href: '/hiring',
 	},
 	{
+		label: 'Співпраця',
+		href: '/outsource',
+	},
+	{
 		label: 'Документи',
 		children: [
 			{
@@ -23,10 +27,10 @@ export const navigationItems: NavigationItem[] = [
 				label: 'Student Program',
 				href: '/student-program',
 			},
-			{
-				label: 'Developer Program',
-				href: '/developer-program',
-			},
+			// {
+			// 	label: 'Developer Program',
+			// 	href: '/developer-program',
+			// },
 		],
 	},
 ]
