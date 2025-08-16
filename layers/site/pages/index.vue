@@ -15,15 +15,6 @@ defineOgImageComponent('Mindenit')
 definePageMeta({
 	layout: 'home',
 })
-
-const products = [
-	{
-		name: 'Розклад',
-		description: 'Сайт з розкладом для студентів університету ХНУРЕ',
-		logo: '/schedule-logo.png',
-		link: 'https://sh.mindenit.org/',
-	},
-]
 </script>
 
 <template>
@@ -39,7 +30,7 @@ const products = [
 			</div>
 
 			<div class="grid grid-cols-1 gap-8">
-				<ProductCard v-for="product in products" :key="product.name" :product="product" />
+				<ProductCard v-for="product in OUR_PRODUCTS" :key="product.name" :product="product" />
 			</div>
 		</section>
 

@@ -30,11 +30,19 @@ defineOgImageComponent('Mindenit')
 
 		<!-- Advantages Section -->
 		<GradientSection variant="primary" size="md" align="center" class="relative overflow-hidden">
-			<Blob size="md" position="top-right" variant="primary" animation="bounce" />
-			<Blob size="sm" position="bottom-left" variant="secondary" animation="bounce" delay="1.5s" />
+			<TheBlob size="md" position="top-right" variant="primary" animation="bounce" />
+			<TheBlob
+				size="sm"
+				position="bottom-left"
+				variant="secondary"
+				animation="bounce"
+				delay="1.5s"
+			/>
 
 			<div class="relative z-10">
-				<h3 class="text-secondary-foreground mb-8 text-3xl font-bold">Чому варто обрати нас?</h3>
+				<h3 class="text-secondary-foreground mb-8 text-center text-3xl font-bold">
+					<GradientText>Чому варто обрати нас?</GradientText>
+				</h3>
 				<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 					<AdvantageCard
 						v-for="(advantage, index) in ADVANTAGES"
@@ -47,16 +55,7 @@ defineOgImageComponent('Mindenit')
 		</GradientSection>
 
 		<!-- Partners Section -->
-		<GradientSection variant="subtle" size="lg" align="center" class="relative overflow-hidden">
-			<Blob size="lg" custom-position="top-0 left-1/4" variant="primary" animation="pulse" />
-			<Blob
-				size="md"
-				custom-position="right-1/4 bottom-0"
-				variant="secondary"
-				animation="pulse"
-				delay="1.5s"
-			/>
-
+		<div class="container mx-auto px-4">
 			<div class="relative z-10">
 				<div class="mb-12 text-center">
 					<h2 class="mb-4 text-3xl font-bold">
@@ -79,22 +78,14 @@ defineOgImageComponent('Mindenit')
 					</div>
 				</div>
 
-				<div class="mt-12 grid gap-6 md:grid-cols-3">
-					<div class="space-y-2 text-center">
-						<div class="text-royal-blue-600 dark:text-royal-blue-400 text-3xl font-bold">5+</div>
-						<div class="text-muted-foreground text-sm">Завершених проектів</div>
-					</div>
-					<div class="space-y-2 text-center">
-						<div class="text-christi-600 dark:text-christi-400 text-3xl font-bold">100%</div>
-						<div class="text-muted-foreground text-sm">Задоволених клієнтів</div>
-					</div>
-					<div class="space-y-2 text-center">
-						<div class="text-amaranth-600 dark:text-amaranth-400 text-3xl font-bold">24/7</div>
-						<div class="text-muted-foreground text-sm">Технічна підтримка</div>
+				<div class="mt-8 flex flex-wrap items-center justify-center gap-8 text-center">
+					<div v-for="stat in PARTNER_STATS" :key="stat.label">
+						<div :class="['text-3xl font-bold', stat.color]">{{ stat.value }}</div>
+						<div class="text-muted-foreground mt-1 text-sm">{{ stat.label }}</div>
 					</div>
 				</div>
 			</div>
-		</GradientSection>
+		</div>
 
 		<Separator />
 
@@ -120,15 +111,15 @@ defineOgImageComponent('Mindenit')
 					align="center"
 					class="relative overflow-hidden"
 				>
-					<Blob size="xl" position="top-left" variant="primary" animation="pulse" />
-					<Blob
+					<TheBlob size="xl" position="top-left" variant="primary" animation="pulse" />
+					<TheBlob
 						size="lg"
 						position="bottom-right"
 						variant="secondary"
 						animation="pulse"
 						delay="1s"
 					/>
-					<Blob size="sm" position="center" variant="tertiary" animation="pulse" delay="2s" />
+					<TheBlob size="sm" position="center" variant="tertiary" animation="pulse" delay="2s" />
 
 					<div class="relative z-10">
 						<div class="mb-8 text-center">
@@ -222,8 +213,8 @@ defineOgImageComponent('Mindenit')
 
 		<!-- Contact Section -->
 		<GradientSection variant="secondary" size="lg" align="center" class="relative overflow-hidden">
-			<Blob size="xl" custom-position="top-1/4 left-0" variant="primary" animation="pulse" />
-			<Blob
+			<TheBlob size="xl" custom-position="top-1/4 left-0" variant="primary" animation="pulse" />
+			<TheBlob
 				size="lg"
 				custom-position="right-0 bottom-1/4"
 				variant="secondary"
@@ -231,14 +222,20 @@ defineOgImageComponent('Mindenit')
 				delay="2s"
 			/>
 
-			<div class="relative z-10">
-				<h3 class="text-secondary-foreground mb-4 text-3xl font-bold">Готові почати ваш проект?</h3>
+			<div class="relative z-10 flex flex-col items-center">
+				<h3 class="text-secondary-foreground mb-4 text-3xl font-bold">
+					<GradientText>Готові почати ваш проект?</GradientText>
+				</h3>
 				<p class="text-muted-foreground mx-auto mb-8 max-w-3xl text-lg leading-relaxed">
 					Напишіть нам, розкажіть про свою ідею, і ми безкоштовно проконсультуємо вас та
 					запропонуємо оптимальне рішення.
 				</p>
 
-				<div class="mb-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+				<ContactForm />
+
+				<div class="text-muted-foreground my-8 text-center text-sm">або</div>
+
+				<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
 					<a
 						href="mailto:sales@mindenit.org"
 						class="group from-royal-blue-600 to-christi-600 hover:from-royal-blue-700 hover:to-christi-700 relative
@@ -256,30 +253,9 @@ defineOgImageComponent('Mindenit')
 						/>
 						<span class="relative z-10">sales@mindenit.org</span>
 					</a>
-
-					<div class="text-muted-foreground flex items-center gap-6 text-sm">
-						<div class="group flex items-center gap-1">
-							<Icon
-								name="lucide:clock"
-								class="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
-							/>
-							<span class="group-hover:text-secondary-foreground transition-colors duration-300">
-								Відповідь до 24 годин
-							</span>
-						</div>
-						<div class="group flex items-center gap-1">
-							<Icon
-								name="lucide:shield-check"
-								class="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
-							/>
-							<span class="group-hover:text-secondary-foreground transition-colors duration-300">
-								Безкоштовна консультація
-							</span>
-						</div>
-					</div>
 				</div>
 
-				<div class="border-border/30 border-t pt-8">
+				<div class="border-border/30 mt-8 border-t pt-8">
 					<div
 						class="text-muted-foreground/70 group flex items-center justify-center gap-2 text-sm"
 					>

@@ -1,4 +1,4 @@
-export const navigationItems: NavigationItem[] = [
+export const NAVIGATION_ITEMS: NavigationItem[] = [
 	{
 		label: 'Головна',
 		href: '/',
@@ -36,7 +36,7 @@ export const navigationItems: NavigationItem[] = [
 	},
 ]
 
-export const socialLinks: SocialLink[] = [
+export const SOCIAL_LINKS: SocialLink[] = [
 	{
 		name: 'Telegram',
 		href: 'https://t.me/mindenit',

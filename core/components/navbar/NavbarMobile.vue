@@ -39,7 +39,7 @@ const getRegularMobileStyles = () => {
 </script>
 
 <template>
-	<div v-if="isOpen" class="border-border/50 mt-4 border-t pt-4 md:hidden">
+	<div v-if="isOpen" class="border-border/50 mt-4 border-t pt-4 lg:hidden">
 		<nav class="space-y-1">
 			<template v-for="item in navigationItems" :key="item.label">
 				<template v-if="item.href && !item.children">
