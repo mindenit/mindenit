@@ -10,6 +10,7 @@ export const navigationItems: NavigationItem[] = [
 	{
 		label: 'Співпраця',
 		href: '/outsource',
+		highlighted: true,
 	},
 	{
 		label: 'Документи',

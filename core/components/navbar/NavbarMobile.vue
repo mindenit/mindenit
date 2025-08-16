@@ -11,6 +11,31 @@ interface Emits {
 
 defineProps<Props>()
 defineEmits<Emits>()
+
+// Стилі для виділеної кнопки в мобільній версії
+const getHighlightedMobileStyles = () => {
+	return [
+		'block rounded-xl px-4 py-2 transition-all duration-300',
+		// Градієнтний фон
+		'bg-gradient-to-r from-royal-blue-500/10 to-christi-500/10',
+		// Бордер
+		'border border-royal-blue-200/50 dark:border-royal-blue-700/50',
+		// Текст
+		'text-royal-blue-700 dark:text-royal-blue-300 font-semibold',
+		// Hover ефекти
+		'hover:from-royal-blue-500/20 hover:to-christi-500/20',
+		'hover:border-royal-blue-300/70 dark:hover:border-royal-blue-600/70',
+		'hover:text-royal-blue-800 dark:hover:text-royal-blue-200',
+		// Тінь
+		'shadow-sm hover:shadow-md',
+		// Анімація
+		'hover:scale-[1.02]',
+	].join(' ')
+}
+
+const getRegularMobileStyles = () => {
+	return 'text-muted-foreground hover:text-secondary-foreground hover:bg-muted block rounded-xl px-4 py-2 transition-colors duration-300'
+}
 </script>
 
 <template>
@@ -20,11 +45,14 @@ defineEmits<Emits>()
 				<template v-if="item.href && !item.children">
 					<NuxtLink
 						:to="item.href"
-						class="text-muted-foreground hover:text-secondary-foreground hover:bg-muted block rounded-xl px-4 py-2
-							transition-colors duration-300"
+						:class="item.highlighted ? getHighlightedMobileStyles() : getRegularMobileStyles()"
 						@click="$emit('close')"
 					>
-						{{ item.label }}
+						<span v-if="item.highlighted" class="flex items-center">
+							{{ item.label }}
+							<Icon name="lucide:sparkles" class="ml-1 !size-3 animate-pulse" />
+						</span>
+						<span v-else>{{ item.label }}</span>
 					</NuxtLink>
 				</template>
 

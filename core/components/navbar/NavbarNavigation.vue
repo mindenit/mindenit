@@ -6,6 +6,17 @@ interface Props {
 }
 
 defineProps<Props>()
+
+const getHighlightedStyles = (isActive: boolean) => {
+	const baseStyles = [
+		navigationMenuTriggerStyle(),
+		'bg-gradient-to-r from-royal-blue-500/10 to-christi-500/10',
+		'text-royal-blue-700 dark:text-royal-blue-300',
+		isActive && 'from-royal-blue-500/25 to-christi-500/25',
+	].filter(Boolean)
+
+	return baseStyles.join(' ')
+}
 </script>
 
 <template>
@@ -17,10 +28,14 @@ defineProps<Props>()
 						<NavigationMenuLink
 							:active="isActive"
 							:href
-							:class="navigationMenuTriggerStyle()"
+							:class="
+								item.highlighted ? getHighlightedStyles(isActive) : navigationMenuTriggerStyle()
+							"
 							@click="navigate"
 						>
-							{{ item.label }}
+							<span class="relative">
+								{{ item.label }}
+							</span>
 						</NavigationMenuLink>
 					</NuxtLink>
 				</template>
