@@ -51,7 +51,7 @@ onMounted(() => {
 			></div>
 
 			<div class="relative mx-auto max-w-5xl px-8 text-center">
-				<div class="mb-8 flex justify-center">
+				<div class="mb-8 flex justify-center max-md:mt-[20vh]">
 					<div class="group relative">
 						<div
 							class="from-royal-blue-400 to-christi-400 absolute -inset-6 rounded-full bg-gradient-to-r opacity-30
@@ -132,7 +132,7 @@ onMounted(() => {
 								:duration="2000"
 								transition="easeOutQuint"
 							/>
-							<div class="text-muted-foreground text-sm font-medium">Задоволених студентів</div>
+							<div class="text-muted-foreground text-sm font-medium">Задоволених клієнтів</div>
 						</div>
 					</div>
 				</TooltipProvider>

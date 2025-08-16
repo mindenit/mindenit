@@ -23,7 +23,7 @@ const handleMobileMenuClose = () => {
 	<div
 		ref="navbarRef"
 		class="bg-card/80 border-border/50 hover:bg-card/90 before:from-royal-blue-500/10 before:to-christi-500/10
-			sticky z-50 mx-auto max-w-4xl rounded-2xl border p-4 shadow-xl backdrop-blur-md transition-all
+			sticky z-50 mx-auto max-w-5xl rounded-2xl border p-4 shadow-xl backdrop-blur-md transition-all
 			duration-500 ease-in-out before:absolute before:inset-0 before:-z-10 before:rounded-2xl
 			before:bg-gradient-to-r before:via-transparent before:opacity-0 before:transition-opacity
 			before:duration-500 hover:shadow-2xl hover:before:opacity-100"
@@ -31,7 +31,7 @@ const handleMobileMenuClose = () => {
 		<div class="flex items-center justify-between">
 			<NavbarLogo :on-logo-click="handleMobileMenuClose" />
 
-			<nav class="hidden items-center gap-2 md:flex">
+			<nav class="hidden items-center gap-4 md:flex">
 				<NavbarNavigation :items="navigationItems" />
 
 				<div class="bg-border h-6 w-px" />

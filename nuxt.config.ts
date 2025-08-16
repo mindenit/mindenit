@@ -68,20 +68,31 @@ export default defineNuxtConfig({
 			url: 'https://mindenit.org',
 			logo: '/mindenit.png',
 			sameAs: ['https://github.com/mindenit', 'https://www.linkedin.com/company/mindenit/'],
+			description:
+				'Mindenit - це компанія, що спеціалізується на створенні інноваційних програмних рішень, включаючи веб- та мобільні додатки. Ми перетворюємо ідеї на реальність, використовуючи передові технології та підходи до розробки.',
+			email: 'sales@mindenit.org',
 		}),
 	},
 	robots: {
 		sitemap: '/sitemap.xml',
+		allow: '/',
 	},
 	seo: {
 		redirectToCanonicalSiteUrl: true,
 		fallbackTitle: true,
 		automaticDefaults: true,
 		metaDataFiles: true,
-		meta: {
-			ogType: 'website',
-			twitterCard: 'summary_large_image',
-			ogLocale: 'uk_UA',
-		},
+		meta: [
+			{
+				name: 'keywords',
+				content:
+					'веб-розробка, мобільні додатки, програмне забезпечення, Nuxt, Vue, JavaScript, розклад хнуре, хнуре, університет',
+			},
+			{ property: 'og:type', content: 'website' },
+			{ property: 'og:locale', content: 'uk_UA' },
+			{ property: 'og:image', content: 'https://mindenit.org/mindenit.png' },
+			{ property: 'og:locale:alternate', content: 'en_US' },
+			{ name: 'twitter:card', content: 'summary_large_image' },
+		],
 	},
 })
