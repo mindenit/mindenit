@@ -68,12 +68,13 @@ defineOgImageComponent('Mindenit')
 				</div>
 
 				<div class="flex justify-center">
-					<div class="grid max-w-4xl gap-8 md:grid-cols-1 lg:grid-cols-2">
+					<div class="flex max-w-4xl flex-wrap justify-center gap-8">
 						<PartnerCard
 							v-for="(partner, index) in PARTNERS"
 							:key="partner.name"
 							:partner="partner"
 							:index="index"
+							class="max-w-[450px] min-w-[300px] flex-1"
 						/>
 					</div>
 				</div>

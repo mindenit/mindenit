@@ -125,15 +125,15 @@ export const PARTNERS = [
 		url: 'https://nure.ua/',
 		category: 'Освіта',
 	},
-	{
-		name: 'Godlike',
-		fullName: 'Godlike Digital Solutions',
-		description:
-			'Провідний провайдер ігрового хостингу з підтримкою Minecraft, Rust, ARK та інших ігор',
-		logo: '/logos/godlike.webp',
-		url: 'https://godlike.host/',
-		category: 'Хостинг',
-	},
+	// {
+	// 	name: 'Godlike',
+	// 	fullName: 'Godlike Digital Solutions',
+	// 	description:
+	// 		'Провідний провайдер ігрового хостингу з підтримкою Minecraft, Rust, ARK та інших ігор',
+	// 	logo: '/logos/godlike.webp',
+	// 	url: 'https://godlike.host/',
+	// 	category: 'Хостинг',
+	// },
 ]
 
 export const MORE_INTERESTING_FEATURES = [
