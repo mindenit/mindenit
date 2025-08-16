@@ -138,13 +138,13 @@ const onSubmit = form.handleSubmit(async values => {
 				:disabled="isSubmitting || isRateLimited"
 				class="w-full bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700"
 			>
-				<Icon v-if="isSubmitting" name="lucide:loader-2" class="mr-2 h-4 w-4 animate-spin" />
+				<Icon v-if="isSubmitting" name="lucide:loader-2" class="mr-2 !size-4 animate-spin" />
 				<template v-else-if="isRateLimited">
-					<Icon name="lucide:timer" class="mr-2 h-4 w-4" />
+					<Icon name="lucide:timer" class="mr-2 !size-4" />
 					Зачекайте {{ secondsRemaining }}с
 				</template>
 				<template v-else>
-					<Icon name="lucide:send" class="mr-2 h-4 w-4" />
+					<Icon name="lucide:send" class="mr-2 !size-4" />
 					Відправити
 				</template>
 			</Button>

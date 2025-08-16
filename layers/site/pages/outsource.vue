@@ -39,7 +39,7 @@ defineOgImageComponent('Mindenit')
 				delay="1.5s"
 			/>
 
-			<div class="relative z-10">
+			<div class="relative z-10 p-8 md:p-12">
 				<h3 class="text-secondary-foreground mb-8 text-center text-3xl font-bold">
 					<GradientText>Чому варто обрати нас?</GradientText>
 				</h3>
@@ -121,7 +121,7 @@ defineOgImageComponent('Mindenit')
 					/>
 					<TheBlob size="sm" position="center" variant="tertiary" animation="pulse" delay="2s" />
 
-					<div class="relative z-10">
+					<div class="relative z-10 p-8 md:p-12">
 						<div class="mb-8 text-center">
 							<div class="mb-4 inline-flex items-center gap-2">
 								<Icon
@@ -222,7 +222,7 @@ defineOgImageComponent('Mindenit')
 				delay="2s"
 			/>
 
-			<div class="relative z-10 flex flex-col items-center">
+			<div class="relative z-10 flex flex-col items-center p-8 md:p-12">
 				<h3 class="text-secondary-foreground mb-4 text-3xl font-bold">
 					<GradientText>Готові почати ваш проект?</GradientText>
 				</h3>
@@ -261,7 +261,7 @@ defineOgImageComponent('Mindenit')
 					>
 						<Icon
 							name="lucide:lightbulb"
-							class="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:text-yellow-500"
+							class="!size-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-yellow-500"
 						/>
 						<span class="group-hover:text-secondary-foreground transition-colors duration-300">
 							<strong>Безкоштовна консультація:</strong> розкажемо про можливості, підберемо

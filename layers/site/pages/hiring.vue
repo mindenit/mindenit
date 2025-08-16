@@ -67,7 +67,7 @@ const { getIconColorClasses } = useIconColorClasses()
 								variant="secondary"
 								class="flex items-center gap-1 text-xs"
 							>
-								<Icon :name="tech.icon" class="h-3 w-3 flex-shrink-0" />
+								<Icon :name="tech.icon" class="!size-3 flex-shrink-0" />
 								<span class="truncate">{{ tech.name }}</span>
 							</Badge>
 						</div>

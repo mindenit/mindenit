@@ -13,9 +13,7 @@
 
 <script setup lang="ts">
 interface Props {
-	// Розмір blob
 	size?: 'sm' | 'md' | 'lg' | 'xl'
-	// Позиція
 	position?:
 		| 'top-left'
 		| 'top-right'
@@ -26,13 +24,9 @@ interface Props {
 		| 'bottom-center'
 		| 'left-center'
 		| 'right-center'
-	// Кольорова схема
 	variant?: 'primary' | 'secondary' | 'tertiary' | 'mixed'
-	// Анімація
 	animation?: 'bounce' | 'pulse' | 'float' | 'spin'
-	// Затримка анімації
 	delay?: string
-	// Кастомні класи для позиції
 	customPosition?: string
 }
 
@@ -45,7 +39,6 @@ const {
 	customPosition,
 } = defineProps<Props>()
 
-// Розміри
 const sizeClass = computed(() => {
 	const sizes = {
 		sm: 'h-16 w-16',
@@ -56,7 +49,6 @@ const sizeClass = computed(() => {
 	return sizes[size]
 })
 
-// Позиції
 const positionClass = computed(() => {
 	if (customPosition) return customPosition
 
@@ -74,7 +66,6 @@ const positionClass = computed(() => {
 	return positions[position]
 })
 
-// Градієнти
 const gradientClass = computed(() => {
 	const gradients = {
 		primary: 'from-royal-blue-400/10 to-christi-400/10',
@@ -85,7 +76,6 @@ const gradientClass = computed(() => {
 	return gradients[variant]
 })
 
-// Анімації
 const animationClass = computed(() => {
 	const animations = {
 		bounce: 'animate-bounce',
