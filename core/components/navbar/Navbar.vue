@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { onClickOutside } from '@vueuse/core'
-import { navigationItems, socialLinks } from '~/core/constants'
 
 const showMobileMenu = ref(false)
 const navbarRef = ref()
@@ -31,15 +30,15 @@ const handleMobileMenuClose = () => {
 		<div class="flex items-center justify-between">
 			<NavbarLogo :on-logo-click="handleMobileMenuClose" />
 
-			<nav class="hidden items-center gap-4 md:flex">
-				<NavbarNavigation :items="navigationItems" />
+			<nav class="hidden items-center gap-4 lg:flex">
+				<NavbarNavigation :items="NAVIGATION_ITEMS" />
 
 				<div class="bg-border h-6 w-px" />
 
-				<NavbarSocial :links="socialLinks" />
+				<NavbarSocial :links="SOCIAL_LINKS" />
 			</nav>
 
-			<div class="flex items-center gap-2 md:hidden">
+			<div class="flex items-center gap-2 lg:hidden">
 				<Button variant="ghost" size="icon" @click="handleMobileMenuToggle">
 					<Icon v-if="!showMobileMenu" name="lucide:menu" class="!size-5" />
 					<Icon v-else name="lucide:x" class="!size-5" />
@@ -47,15 +46,15 @@ const handleMobileMenuClose = () => {
 				<ThemeSwitcher />
 			</div>
 
-			<div class="hidden items-center gap-2 md:flex">
+			<div class="hidden items-center gap-2 lg:flex">
 				<ThemeSwitcher />
 			</div>
 		</div>
 
 		<NavbarMobile
 			:is-open="showMobileMenu"
-			:navigation-items="navigationItems"
-			:social-links="socialLinks"
+			:navigation-items="NAVIGATION_ITEMS"
+			:social-links="SOCIAL_LINKS"
 			@close="handleMobileMenuClose"
 		/>
 	</div>

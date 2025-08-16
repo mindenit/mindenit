@@ -22,7 +22,7 @@ defineProps<Props>()
 		:href="partner.url && partner.url !== '#' ? partner.url : undefined"
 		:target="partner.url && partner.url !== '#' ? '_blank' : undefined"
 		:rel="partner.url && partner.url !== '#' ? 'noopener noreferrer' : undefined"
-		class="block h-full"
+		class="block"
 	>
 		<div
 			class="partner-card before:from-royal-blue-500/20 before:via-christi-500/10 before:to-amaranth-500/10

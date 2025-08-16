@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface ProcessStep {
-	number?: string // Опціональне, якщо використовується
+	number?: string
 	title: string
 	description: string
 	duration: string
@@ -82,7 +82,7 @@ defineProps<Props>()
 			</p>
 
 			<div class="flex items-center gap-2">
-				<Icon name="lucide:clock" class="text-christi-600 dark:text-christi-400 h-3 w-3" />
+				<Icon name="lucide:clock" class="text-christi-600 dark:text-christi-400 !size-3" />
 				<span class="text-christi-600 dark:text-christi-400 text-xs font-semibold">
 					{{ step.duration }}
 				</span>

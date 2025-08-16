@@ -21,6 +21,11 @@ export default defineNuxtConfig({
 		plugins: [tailwindcss()],
 	},
 	runtimeConfig: {
+		smtpHost: process.env.SMTP_HOST,
+		smtpPort: Number(process.env.SMTP_PORT),
+		smtpUser: process.env.SMTP_USER,
+		smtpPass: process.env.SMTP_PASS,
+		smtpFrom: process.env.SMTP_FROM,
 		public: {
 			hiringWebhookUrl: process.env.HIRING_WEBHOOK_URL,
 		},

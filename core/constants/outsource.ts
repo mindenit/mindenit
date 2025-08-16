@@ -128,11 +128,11 @@ export const PARTNERS = [
 	{
 		name: 'Godlike',
 		fullName: 'Godlike Digital Solutions',
-	 	description:
-	 		'Провідний провайдер ігрового хостингу з підтримкою Minecraft, Rust, ARK та інших ігор',
-	 	logo: '/logos/godlike.webp',
-	 	url: 'https://godlike.host/',
-	 	category: 'Хостинг',
+		description:
+			'Провідний провайдер ігрового хостингу з підтримкою Minecraft, Rust, ARK та інших ігор',
+		logo: '/logos/godlike.webp',
+		url: 'https://godlike.host/',
+		category: 'Хостинг',
 	},
 ]
 
@@ -164,4 +164,14 @@ export const MORE_INTERESTING_FEATURES = [
 		textColor: 'text-amaranth-600 dark:text-amaranth-400',
 		hoverColor: 'group-hover:text-amaranth-600 dark:group-hover:text-amaranth-400',
 	},
+]
+
+export const PARTNER_STATS = [
+	{
+		value: '5+',
+		label: 'Завершених проектів',
+		color: 'text-royal-blue-600 dark:text-royal-blue-400',
+	},
+	{ value: '100%', label: 'Задоволених клієнтів', color: 'text-christi-600 dark:text-christi-400' },
+	{ value: '24/7', label: 'Технічна підтримка', color: 'text-amaranth-600 dark:text-amaranth-400' },
 ]

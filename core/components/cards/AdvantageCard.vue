@@ -19,11 +19,10 @@ defineProps<Props>()
 		:style="{ animationDelay: `${(index || 0) * 200}ms` }"
 	>
 		<div
-			class="bg-royal-blue-100 dark:bg-royal-blue-900/30 group-hover:from-royal-blue-100
-				group-hover:to-christi-100 dark:group-hover:from-royal-blue-900/50
-				dark:group-hover:to-christi-900/50 mx-auto flex h-16 w-16 items-center justify-center rounded-xl
-				transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:bg-gradient-to-r
-				group-hover:shadow-lg"
+			class="group-hover:to-christi-100 dark:group-hover:to-christi-900/50 from-royal-blue-100 to-royal-blue-100
+				dark:from-royal-blue-900/30 dark:to-royal-blue-900/30 mx-auto flex h-16 w-16 items-center
+				justify-center rounded-xl bg-gradient-to-r shadow-lg transition duration-500 group-hover:scale-110
+				group-hover:rotate-12 group-hover:shadow-xl"
 		>
 			<Icon
 				:name="advantage.icon"

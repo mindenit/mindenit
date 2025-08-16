@@ -10,4 +10,9 @@ services:
     environment:
       - NODE_ENV=production
       - HIRING_WEBHOOK_URL=${HIRING_WEBHOOK_URL:-}
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_FROM=${SMTP_FROM:-}
     restart: unless-stopped
