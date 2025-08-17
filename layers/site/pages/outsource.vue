@@ -231,9 +231,9 @@ defineOgImageComponent('Mindenit')
 					запропонуємо оптимальне рішення.
 				</p>
 
-				<ContactForm />
+				<!-- <ContactForm /> -->
 
-				<div class="text-muted-foreground my-8 text-center text-sm">або</div>
+				<!-- <div class="text-muted-foreground my-8 text-center text-sm">або</div> -->
 
 				<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
 					<a
