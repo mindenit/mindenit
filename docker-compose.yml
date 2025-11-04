@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '${PORT:-3000}:3000'
+      - '${EXTERNAL_PORT:-3000}:3000'
     environment:
       - NODE_ENV=production
       - HIRING_WEBHOOK_URL=${HIRING_WEBHOOK_URL:-}
