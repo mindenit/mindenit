@@ -25,7 +25,6 @@
 		"@nuxt/image": "1.10.0",
 		"@nuxtjs/color-mode": "3.5.2",
 		"@nuxtjs/seo": "3.0.3",
-		"@rybbit/js": "^0.1.0",
 		"@tailwindcss/vite": "^4.1.8",
 		"@vee-validate/zod": "^4.15.1",
 		"@vueuse/core": "^13.3.0",

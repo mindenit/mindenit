@@ -57,6 +57,17 @@ export default defineNuxtConfig({
 		componentDir: './core/components/ui',
 	},
 	css: ['~/core/assets/css/main.css'],
+	app: {
+		head: {
+			script: [
+				{
+					src: 'https://analytics.mindenit.org/api/script.js',
+					'data-site-id': '6e8979143664',
+					defer: true,
+				},
+			],
+		},
+	},
 	site: {
 		url: 'https://mindenit.org',
 		name: 'Mindenit - Інноваційні Програмні Рішення',
