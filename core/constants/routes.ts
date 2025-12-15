@@ -7,11 +7,11 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
 		label: "Кар'єра",
 		href: '/hiring',
 	},
-	{
-		label: 'Співпраця',
-		href: '/outsource',
-		highlighted: true,
-	},
+	// {
+	// 	label: 'Співпраця',
+	// 	href: '/outsource',
+	// 	highlighted: true,
+	// },
 	{
 		label: 'Документи',
 		children: [
