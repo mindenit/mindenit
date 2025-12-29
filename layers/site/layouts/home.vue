@@ -158,7 +158,7 @@ onMounted(() => {
 						size="lg"
 						variant="success"
 						as="a"
-						href="https://send.monobank.ua/jar/2GW9aAQNXE"
+						href="https://send.monobank.ua/jar/5p751sXutx"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
